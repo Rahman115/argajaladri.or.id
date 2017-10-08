@@ -1,3 +1,0 @@
-App.directive('gbNoteList', function() { 
-	
-});
