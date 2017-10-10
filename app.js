@@ -6,11 +6,11 @@ var app = angular.module('myApp', ["app.controllers", "ngRoute"]);
 app.config(function ($routeProvider) {
     $routeProvider
             .when('/anggota', {
-                templateUrl: 'view/anggota.html',
+                templateUrl: './view/anggota.html',
                 controller: 'anggotaCtrl'
             })
             .when('/artikel', {
-                templateUrl: 'view/artikel.html',
+                templateUrl: '/view/artikel.html',
                 controller: 'artikelCtrl'
             })
             .when('/home', {
