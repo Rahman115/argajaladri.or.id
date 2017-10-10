@@ -1,1 +1,23 @@
-Hello Saya artikel
+<h2 class="title-top">Berita Terbaru</h2>
+<!--Informasi Terbaru-->
+<div class="middle-panel">
+    <div class="bottom-middle-panel">
+        <ul>
+
+            <li ng-repeat="art in artikel" >
+                <div class="date">
+                    {{art.tanggal}}
+                </div>
+                <div class="title">
+                    <a href="#">
+                        {{art.judul}}
+                    </a>
+                </div>
+                <div class="text">
+                    {{art.isi | limitTo: 255}}{{art.isi.length > 255 ? ' ...' : ''}}
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>
