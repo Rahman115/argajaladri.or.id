@@ -17,15 +17,19 @@ and open the template in the editor.
 
         <!-- Javascript -->
         <script src="resources/js/angular.js" type="text/javascript"></script>
+        <script src="resources/js/angular-route.js" type="text/javascript"></script>
         <script src="resources/js/angular.min.js" type="text/javascript"></script>
-        <script src="resources/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="resources/js/common.js" type="text/javascript"></script>
-        <script src="resources/js/expand.js" type="text/javascript"></script>
-        <script src="resources/js/jquery.dataTables.min.js" type="text/javascript"></script>
-        <script src="resources/js/jquery.min.js" type="text/javascript"></script>
+        <script src="resources/js/bootstrap.min.js" ></script>
+        <script src="resources/js/common.js" language="JavaScript" type="text/javascript"></script>
+        <script src="resources/js/expand.js" language="JavaScript" type="text/javascript"></script>
+		<script src="resources/js/jquery.js" ></script>
+        <script src="resources/js/jquery.dataTables.min.js" ></script>
+        <script src="resources/js/jquery.min.js" ></script>
         <script src="App.js" type="text/javascript"></script>
+        <script src="controller/controller.js" type="text/javascript"></script>
+		
     </head>
-    <body ng-controller="appCtrl">
+    <body>
         <!-- MAIN WEBSITE BEGIN -->
         <div id="main">
             <!-- HEADER WEBSITE BEGIN -->
@@ -53,12 +57,21 @@ and open the template in the editor.
                 <div class="left-side" style="margin-top: 48px;"></div>
                 <div class="middle-side">
                     <ul>
+<<<<<<< HEAD
+                        <li><a href="#!/home">Home</a></li>
+                        <li><a href="#!/artikel">Artikel</a></li>
+                        <li><a href="#!/pengurus">Pengurus</a></li>
+                        <li><a href="#!/anggota">Anggota</a></li>
+                        <li><a href="#!/bursa">Bursa</a></li>
+                        <li><a href="#!/tentang">Tentang</a></li>
+=======
                         <li><a href="">Home</a></li>
                         <li><a href="">Artikel</a></li>
                         <li><a href="">Pengurus</a></li>
                         <li><a href="">Anggota</a></li>
                         <li><a href="">Bursa</a></li>
                         <li><a href="">Tentang</a></li>
+>>>>>>> 4ac031a454242ca795af8817ff0a6d6a3ba3ddf5
                     </ul>
                     <div class="clear"></div>
                 </div>
@@ -111,6 +124,10 @@ and open the template in the editor.
             <div id="content">
 
                 <!-- LEFT CONTENT WEBSITE BEGIN -->
+<<<<<<< HEAD
+                <div id="left-content" ng-view></div>
+                
+=======
                 <div id="left-content">
                     <h2 class="title-top">Data Guru</h2>
                     <table class="table table-stripped paging-table">
@@ -135,6 +152,7 @@ and open the template in the editor.
                     <!--</li>-->
                     <!--</ul>-->
                 </div>
+>>>>>>> 4ac031a454242ca795af8817ff0a6d6a3ba3ddf5
                 <!-- END OF LEFT CONTENT WEBSITE -->
 
                 <!-- RIGHT CONTENT WEBSITE BEGIN -->
