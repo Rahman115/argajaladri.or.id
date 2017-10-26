@@ -1,7 +1,9 @@
 //(function () {
 //    "use strict";
 
-var app = angular.module('myApp', ["app.controllers", "ngRoute"]);
+var app = angular.module('myApp', ["app.controllers", "app.services", "ngRoute"]);
+
+
 
 app.config(function ($routeProvider) {
     $routeProvider
@@ -18,16 +20,24 @@ app.config(function ($routeProvider) {
                 controller: 'appCtrl'
             })
             .when('/pengurus', {
-                templateUrl: 'view/pengurus.html'
-//                controller: 'appCtrl'
+                templateUrl: 'view/pengurus.html',
+                controller: 'pengurusCtrl'
             })
             .when('/bursa', {
                 templateUrl: 'view/bursa.html'
 //                controller: 'appCtrl'
             })
+            .when('/divisi', {
+                templateUrl: 'view/divisi.html',
+                controller: 'divisiCtrl'
+            })
             .when('/tentang', {
                 templateUrl: 'view/about.html'
-//                controller: 'appCtrl'
+//              controller: 'appCtrl'
+            })
+            .when('/divisi/:postId', {
+                templateUrl: 'view/divisidetail.html',
+                controller: 'divCtrl'
             })
             .otherwise({redirectTo: '/home'});
 });
