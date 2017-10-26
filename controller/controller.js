@@ -33,16 +33,20 @@ app.controller('artikelCtrl', ['$scope', 'Artikel', function ($scope, Artikel) {
 
 app.controller('anggotaCtrl', ['$scope', 'Items', 'Angkatan', function ($scope, Items, Angkatan) {
         $scope.hideElement = false;
-
+		// $scope.getId = ;
         Angkatan.then(function (successResponse) {
-//            console.log(successResponse);
             $scope.angkatan = successResponse;
         });
 
-        Items.then(function (successResponse) {
-            $scope.anggota = successResponse;
+        $scope.anggota = Items.then(function (successResponse) {
+             var ang = successResponse;
+			 return ang;
+			// var id = successResponse[0].id;
+			// var getId = id.split('.');
+			// console.log(getId[1]);
         });
 		
+			console.log($scope.anggota.$$state);
 		
 		$scope.getAnggota = function(year){
 			return year;
