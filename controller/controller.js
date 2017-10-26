@@ -42,6 +42,12 @@ app.controller('anggotaCtrl', ['$scope', 'Items', 'Angkatan', function ($scope, 
         Items.then(function (successResponse) {
             $scope.anggota = successResponse;
         });
+		
+		
+		$scope.getAnggota = function(year){
+			return year;
+		};
+		
     }]);
 app.controller('appCtrl', [function ($scope) {}]);
 app.controller('divisiCtrl', function ($scope, $http) {
