@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "judul": "Divisi Mountenering",
+        "deskripsi": "gunung.txt",
+        "image": "img_divisi.jpg"
+    },
+    {
+        "id": 2,
+        "judul": "Divisi Caving",
+        "deskripsi": "",
+        "image": "img_divisi.jpg"
+    },
+    {
+        "id": 3,
+        "judul": "Divisi Rafting",
+        "deskripsi": "",
+        "image": "img_divisi.jpg"
+    },
+    {
+        "id": 4,
+        "judul": "Divisi Diving",
+        "deskripsi": "",
+        "image": "img_divisi.jpg"
+    },
+    {
+        "id": 5,
+        "judul": "Divisi Climbing",
+        "deskripsi": "",
+        "image": "img_divisi.jpg"
+    }
+]

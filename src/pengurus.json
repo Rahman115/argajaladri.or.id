@@ -1,0 +1,124 @@
+[
+    {
+        "posisi": "Ketua Umum",
+        "user": [
+            {
+                "name": "Muhammad Fahrizal Anwar",
+                "ang": "Pratisena Danadiaksa"
+            }
+        ],
+        "moto": "mm"
+    },
+    {
+        "posisi": "Sekretaris Umum",
+        "user": [
+            {
+                "name": "Endah Sulisyoningsih",
+                "ang": "Pratisena Danadiaksa",
+                "image":"xx.png"
+            }
+        ],
+        "moto": "mm"
+    },
+    {
+        "posisi": "Bendahara Umum",
+        "user": [
+            {
+                "name": "Nur Asyiyah Jamil",
+                "ang": "Pratisena Danadiaksa",
+                "image":"xx.png"
+            }
+        ],
+        "moto": "mm"
+    },
+    {
+        "posisi": "Bidang I",
+        "user": [
+            {
+                "name": "abudu",
+                "ang": "GB",
+                "image":"xx.png"
+            },
+            {
+                "name": "abudu",
+                "ang": "GB",
+                "image":"xx.png"
+            },
+            {
+                "name": "abudu",
+                "ang": "GB",
+                "image":"xx.png"
+            }
+        ],
+        "moto": "mm"
+    },
+    {
+        "posisi": "Bidang II",
+        "user": [
+            {
+                "name": "abudu",
+                "ang": "GB",
+                "image":"xx.png"
+            },
+            {
+                "name": "abudu",
+                "ang": "GB",
+                "image":"xx.png"
+            },
+            {
+                "name": "abudu",
+                "ang": "GB",
+                "image":"xx.png"
+            }
+        ],
+        "moto": "mm"
+    },
+    {
+        "posisi": "Bidang III - Rumah Tangga",
+        "user": [
+            {
+                "name": "Restu Teguh Raharjo",
+                "ang": "Pratisena Danadiaksa",
+                "image":"xx.png"
+            },
+            {
+                "name": "abudu",
+                "ang": "GB",
+                "image":"xx.png"
+            },
+            {
+                "name": "abudu",
+                "ang": "GB",
+                "image":"xx.png"
+            }
+        ],
+        "moto": "mm"
+    },
+    {
+        "posisi": "Bursa",
+        "user": [
+            {
+                "name": "abudu",
+                "ang": "GB",
+                "image":"xx.png"
+            }
+        ],
+        "moto": "mm"
+    },
+    {
+        "posisi": "SAR",
+        "user": [
+            {
+                "name": "abudu",
+                "ang": "GB",
+                "image":"xx.png"
+            },
+            {
+                "name": "abudu",
+                "ang": "GB",
+                "image":"xx.png"
+            }
+        ],
+        "moto": "mm"
+    }
+]
