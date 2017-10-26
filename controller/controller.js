@@ -24,45 +24,68 @@ app.controller('artikelCtrl', ['$scope', 'Artikel', function ($scope, Artikel) {
                     isi: $scope.val[4]
                 };
             }
-            console.log($scope.artikel);
+//            console.log($scope.artikel);
         });
     }]);
 
-app.factory('Items', ['$http', function ($http) {
-        var Url = "src/anggota.csv";
-        var Items = $http.get(Url).then(function (response) {
-            return response.data;
+
+
+
+app.controller('anggotaCtrl', ['$scope', 'Items', 'Angkatan', function ($scope, Items, Angkatan) {
+        $scope.hideElement = false;
+
+        Angkatan.then(function (successResponse) {
+//            console.log(successResponse);
+            $scope.angkatan = successResponse;
         });
-        return Items;
-    }]);
-app.controller('anggotaCtrl', ['$scope', 'Items', function ($scope, Items) {
+
         Items.then(function (successResponse) {
-            $scope.arr = successResponse.split('\n');
-            $scope.anggota = [];
-            for (i = 0; i < $scope.arr.length - 1; i++) {
-                $scope.val = $scope.arr[i].split(';');
-                $scope.anggota[i] = {
-                    no: $scope.val[0],
-                    id: $scope.val[1],
-                    angkatan: $scope.val[2],
-                    nama: $scope.val[3],
-                    lahir: $scope.val[4],
-                    sex: $scope.val[5],
-                    darah: $scope.val[6],
-                    agama: $scope.val[7],
-                    kerja: $scope.val[8],
-                    alamat: $scope.val[9],
-                    hp: $scope.val[10],
-                    email: $scope.val[11],
-                    foto: $scope.val[12],
-                    lapangan: $scope.val[13]
-
-                };
-            }
-            console.log($scope.anggota);
-        }
-        );
+            $scope.anggota = successResponse;
+        });
     }]);
-
 app.controller('appCtrl', [function ($scope) {}]);
+app.controller('divisiCtrl', function ($scope, $http) {
+//    $scope.idDivisi = "Hello world";
+    var url = "src/divisi.json";
+    // var url = "src/divisi.json";
+    $http.get(url).then(function (response) {
+        $scope.divisi = response.data;
+        for(i = 0; i < $scope.divisi.length; i++ ){
+            console.log(i);
+        }
+        var doc = "src/divisi/"+$scope.divisi[0].deskripsi;
+        var docx = $http.get(doc).then(function (response) {
+            var obj = response.data;
+//            return response.data;
+            return obj;
+        }); 
+        
+//        $scope.desk = ;
+        console.log(docx);
+    });
+
+});
+app.controller('pengurusCtrl', function ($scope, $http) {
+    var url = "src/pengurus.json";
+    $http.get(url).then(function (response) {
+        $scope.pengurus = response.data;
+    });
+});
+
+app.controller('divCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
+    console.log($routeParams.postId);
+    $scope.access = $routeParams.postId;
+}]);
+
+app.controller('myDivisiCtrl', ['$scope', function ($scope) {
+        $scope.divisi = [
+            {'id': 1, 'divisi': 'Divisi Mountenering'},
+            {'id': 2, 'divisi': 'Divisi Caving'},
+            {'id': 3, 'divisi': 'Divisi Rafting'},
+            {'id': 4, 'divisi': 'Divisi Diving'},
+            {'id': 5, 'divisi': 'Divisi Climbing'}
+        ];
+
+
+    }]);
 //}());
