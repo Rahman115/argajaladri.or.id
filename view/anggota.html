@@ -1,15 +1,8 @@
 <h2 class="title-top">Data Anggota Argajaladri</h2> 
-<table class="table table-stripped paging-table">
-    <thead>
-        <tr>
-            <th>Foto</th>
-            <th>NIP</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr ng-repeat="user in anggota">
-            <td>{{user.no}}</td>
-            <td>{{user.nama}}</td>
-        </tr>
-    </tbody>
-</table>
+<div class="middle-panel">
+    <div class="bottom-middle-panel">
+        <ul >
+            <li ng-repeat="level in angkatan">[ {{level.tahun}} ] - {{level.angkatan}} ({{level.arti}})</li>
+        </ul>
+    </div>
+</div>

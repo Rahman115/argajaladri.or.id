@@ -1,1 +1,17 @@
-<h2>Pengurus</h2>
+<h2 class="title-top">Pengurus</h2>
+<div class="middle-panel">
+    <div class="bottom-middle-panel">
+        <ul>
+
+            <li ng-repeat="arr in pengurus" >
+                {{arr.posisi}}
+                <ul>
+                    <li ng-repeat="anggota in arr.user" >
+                        {{anggota.name}} - {{anggota.ang}}
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
