@@ -61,7 +61,7 @@ app.controller('divisiCtrl', function ($scope, $http) {
     $http.get(url).then(function (response) {
         $scope.divisi = response.data;
         for(i = 0; i < $scope.divisi.length; i++ ){
-            console.log(i);
+            // console.log(i);
         }
         var doc = "src/divisi/"+$scope.divisi[0].deskripsi;
         var docx = $http.get(doc).then(function (response) {
@@ -82,9 +82,35 @@ app.controller('pengurusCtrl', function ($scope, $http) {
     });
 });
 
-app.controller('divCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
-    console.log($routeParams.postId);
-    $scope.access = $routeParams.postId;
+app.controller('divCtrl', ['$scope', '$routeParams','$http', function ($scope, $routeParams, $http) {
+    // console.log($routeParams.postId);
+	$scope.access = false;
+    var id = $routeParams.postId;
+	
+	var url = "src/divisi.json";
+	$http.get(url).then(function (response) {
+		for(i = 0; i < response.data.length; i++) {
+			if(response.data[i].id == id) {
+				$scope.access = true;
+			}
+		}
+		
+		if($scope.access == true) {
+			var doc = "src/divisi/"+response.data[id - 1].deskripsi;
+			$http.get(doc).then(function (res) {
+				$scope.desk =res.data;
+				
+            
+			// return JSON.parse(angular.toJson(v));
+				// console.log($scope.desk);
+        }); 
+		// Docx.then(te);
+		$scope.judul = response.data[id - 1].judul;
+		// $scope.desk = $scope.docx[id - 1];
+		}
+	});
+	
+	
 }]);
 
 app.controller('myDivisiCtrl', ['$scope', function ($scope) {

@@ -49,8 +49,19 @@ app.factory('Angkatan', ['$http', function ($http) {
         });
         return Angkatan;
     }]);
+	
+// app.factory('DivisiDetail', ['$http', function($http) {
+// var url = "src/divisi.json";
+	// var DivisiDetail = $http.get(url).then(function (response) {
+		// return response.data;
+	// }	
+	
+	// return DivisiDetail;
+// }])
 
 /**
+
+
  
  var mainApp = angular.module("mainApp", []);
  

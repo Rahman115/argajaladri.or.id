@@ -8,25 +8,25 @@
     {
         "id": 2,
         "judul": "Divisi Caving",
-        "deskripsi": "",
+        "deskripsi": "gua.txt",
         "image": "img_divisi.jpg"
     },
     {
         "id": 3,
         "judul": "Divisi Rafting",
-        "deskripsi": "",
+        "deskripsi": "arung.txt",
         "image": "img_divisi.jpg"
     },
     {
         "id": 4,
         "judul": "Divisi Diving",
-        "deskripsi": "",
+        "deskripsi": "renang.txt",
         "image": "img_divisi.jpg"
     },
     {
         "id": 5,
         "judul": "Divisi Climbing",
-        "deskripsi": "",
+        "deskripsi": "panjat.txt",
         "image": "img_divisi.jpg"
     }
 ]
