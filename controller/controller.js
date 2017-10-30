@@ -28,9 +28,6 @@ app.controller('artikelCtrl', ['$scope', 'Artikel', function ($scope, Artikel) {
         });
     }]);
 
-
-
-
 app.controller('anggotaCtrl', ['$scope', 'Items', 'Angkatan', function ($scope, Items, Angkatan) {
         $scope.hideElement = false;
 		// $scope.getId = ;
@@ -40,15 +37,18 @@ app.controller('anggotaCtrl', ['$scope', 'Items', 'Angkatan', function ($scope, 
 
         $scope.anggota = Items.then(function (successResponse) {
              var ang = successResponse;
+			var id = successResponse[0].id;
+			var getId = id.split('.');
+			console.log(getId[1]);
 			 return ang;
-			// var id = successResponse[0].id;
-			// var getId = id.split('.');
-			// console.log(getId[1]);
         });
 		
-			console.log($scope.anggota.$$state);
+		
+		// dont delete
+		// console.log($scope.anggota.$$state);
 		
 		$scope.getAnggota = function(year){
+			console.log(year);
 			return year;
 		};
 		

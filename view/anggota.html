@@ -2,8 +2,8 @@
 <div class="middle-panel">
     <div class="bottom-middle-panel">
         <ul >
-            <li ng-repeat="level in angkatan"><input type="checkbox" ng-model="x" name="x"> - [ {{level.tahun}} ] - {{level.angkatan}} ({{level.arti}}) - {{level.jumlah}} Orang 
-			<div ng-if="x">{{getAnggota(level.tahun);}}</div>
+            <li ng-repeat="level in angkatan"><input type="checkbox" ng-model="x" name="x" ng-click="getAnggota(level.tahun);"> - [ {{level.tahun}} ] - {{level.angkatan}} ({{level.arti}}) - {{level.jumlah}} Orang 
+			<div ng-if="x">{{level.angkatan}}</div>
 			</li>
         </ul>
     </div>
