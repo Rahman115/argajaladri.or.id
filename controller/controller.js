@@ -41,6 +41,7 @@ app.controller('anggotaCtrl', ['$scope', 'Items', 'Angkatan', function ($scope, 
 
 
         $scope.getAnggota = function (year) {
+			// $scope.x = false;
             var y = year.toString().slice(2);
             // console.log(y);
 
@@ -60,7 +61,6 @@ app.controller('anggotaCtrl', ['$scope', 'Items', 'Angkatan', function ($scope, 
                         angg[i] = successResponse[i];
                         // console.log(angg[i]);
                     }
-
                 }
                 var obj = Object.keys(angg);
 				$scope.obj = obj;
@@ -76,6 +76,7 @@ app.controller('anggotaCtrl', ['$scope', 'Items', 'Angkatan', function ($scope, 
 				
 
             });
+			// $scope.x = true;
             return y;
         };
 
