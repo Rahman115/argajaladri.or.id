@@ -3,7 +3,11 @@
     <div class="bottom-middle-panel">
         <ul >
             <li ng-repeat="level in angkatan"><input type="checkbox" ng-model="x" name="x" ng-click="getAnggota(level.tahun);"> - [ {{level.tahun}} ] - {{level.angkatan}} ({{level.arti}}) - {{level.jumlah}} Orang 
-			<div ng-if="x">{{level.angkatan}}</div>
+			<div ng-if="x">
+				<div ng-repeat="a in anggota">
+					<p>{{a.nama}}</p>
+				</div>
+			</div>
 			</li>
         </ul>
     </div>
