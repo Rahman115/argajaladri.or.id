@@ -73,15 +73,23 @@ app.controller('anggotaCtrl', ['$scope', 'Items', 'Angkatan', function ($scope, 
         };
 
     }]);
-app.controller('appCtrl', ['$scope', 'Home',  function ($scope, Home) {
+app.controller('appCtrl', ['$scope', '$http', 'Home',  function ($scope, $http, Home) {
 	
 	
 	Home.then(function (response) {
-			console.log(response[0].desk);
+		
+		$scope.artikel = response;
+			
+			var txt = "src/artikel/" + response[0].desk;
+			$http.get(txt).then(function (res) {				
+				console.log(res.data);
+			});
+			
 			
 			
 		});
-		
+	
+
 		
 	$scope.divisi = [
             {'id': 1, 'divisi': 'Divisi Mountenering'},

@@ -1,72 +1,60 @@
 <!-- Heading Row -->
-            <div class="row my-4">
-                <div class="col-lg-8">
-                    <img class="img-fluid rounded" src="http://placehold.it/900x400" alt="">
-                </div>
-                <!-- /.col-lg-8 -->
-                <div class="col-lg-4">
-                    <h1>Business Name or Tagline</h1>
-                    <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
-                    <a class="btn btn-primary btn-lg" href="#">Call to Action!</a>
-                </div>
-                <!-- /.col-md-4 -->
-            </div>
-            <!-- /.row -->
-
-            <!-- Call to Action Well -->
-            <div class="card text-white bg-secondary my-4 text-center">
-                <div class="card-body">
-                    <p class="text-white m-0">This call to action card is a great place to showcase some important information or display a clever tagline!</p>
-                </div>
-            </div>
-
-            <!-- Content Row -->
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h2 class="card-title">Card One</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">More Info</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.col-md-4 -->
-                <div class="col-md-4 mb-4">
-				<div class="card" style="width: 20rem;">
-  <div class="card-header">
-    Featured
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Vestibulum at eros</li>
-  </ul>
+<div class="row my-4">
+    <div class="col-lg-8">
+        <img class="img-fluid rounded" src="http://placehold.it/900x400" alt="">
+    </div>
+    <!-- /.col-lg-8 -->
+    <div class="col-lg-4">
+        <h1>Business Name or Tagline</h1>
+        <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
+        <a class="btn btn-primary btn-lg" href="#">Call to Action!</a>
+    </div>
+    <!-- /.col-md-4 -->
 </div>
-                    
-                </div>
-                <!-- /.col-md-4 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-					  <div class="card-header">
-    Divisi Argajaladri
-  </div>
-                        <div class="list-group list-group-flush">
-						<!-- card-body  -->
-                            <!-- <p class="card-text"  class="list-group"> -->
-							
-                               <a class="list-group-item list-group-item-action"  ng-repeat="d in divisi" href="#!/divisi/{{d.id}}" >{{d.divisi}}</a>
-							
-						   <!-- </p> -->
-                        </div>
-                        <div class="card-footer text-right">
-                            <!-- <a href="#" class="btn btn-primary btn-sm">More Info</a> -->
-                        </div>
-                    </div>
-                </div>
-                <!-- /.col-md-4 -->
+<!-- /.row -->
 
+<!-- Call to Action Well -->
+<div class="card text-white bg-secondary my-4 text-center">
+    <div class="card-body">
+        <p class="text-white m-0">This call to action card is a great place to showcase some important information or display a clever tagline!</p>
+    </div>
+</div>
+
+<!-- Content Row -->
+<div class="row">
+    <div class="col-md-8 mb-8">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" ng-repeat="art in artikel | orderBy:'date'">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">{{art.judul}}</h5>
+                    <small>{{art.date}}</small>
+                </div>
+                <p class="mb-1">{{art.desk}}</p>
+                <!-- <p class="mb-1">{{art.isi | limitTo: 255}}{{art.isi.length > 255 ? ' ...' : ''}}</p> -->
+                <small>{{art.write}}.</small>
+            </a>
+        </div>
+    </div>
+    <!-- /.col-md-4 -->
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-header">
+                Divisi Argajaladri
             </div>
-            <!-- /.row -->
+            <div class="list-group list-group-flush">
+                <!-- card-body  -->
+                <!-- <p class="card-text"  class="list-group"> -->
+
+                <a class="list-group-item list-group-item-action"  ng-repeat="d in divisi" href="#!/divisi/{{d.id}}" >{{d.divisi}}</a>
+
+                <!-- </p> -->
+            </div>
+            <!-- <div class="card-footer text-right"> -->
+                <!-- <a href="#" class="btn btn-primary btn-sm">More Info</a> -->
+            <!-- </div> -->
+        </div>
+    </div>
+    <!-- /.col-md-4 -->
+
+</div>
+<!-- /.row -->
