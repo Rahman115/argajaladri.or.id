@@ -5,8 +5,7 @@
         "user": [
             {
 			"id": 227,
-                "name": "Muhammad Fahrizal Anwar",
-                "ang": "Pratisena Danadiaksa"
+            "div": "Ketua Umum Argajaladri"
             }
         ],
         "moto": "mm"
@@ -16,10 +15,8 @@
         "posisi": "Sekretaris Umum",
         "user": [
             {
-			"id": 224,
-                "name": "Endah Sulisyoningsih",
-                "ang": "Pratisena Danadiaksa",
-                "image":"xx.png"
+				"id": 224,
+                "div": "Sekretaris Umum Argajaladri"
             }
         ],
         "moto": "mm"
@@ -29,10 +26,8 @@
         "posisi": "Bendahara Umum",
         "user": [
             {
-			"id": 226,
-                "name": "Nur Asyiyah Jamil",
-                "ang": "Pratisena Danadiaksa",
-                "image":"xx.png"
+				"id": 226,
+				"div": "Bendahara Umum Argajaladri"
             }
         ],
         "moto": "mm"
@@ -41,10 +36,12 @@
         "posisi": "Bidang I",
         "user": [
             {
-			"id": 229,
-                "name": "abudu",
-                "ang": "GB",
-                "image":"xx.png"
+				"id": 229,
+				"div": "Ketua Bidang"
+            },
+			{
+				"id": 230,
+				"div": "Staf"
             }
         ],
         "moto": "mm"
@@ -53,10 +50,12 @@
         "posisi": "Bidang II",
         "user": [
             {
-			"id": 231,
-                "name": "abudu",
-                "ang": "GB",
-                "image":"xx.png"
+				"id": 231,
+                "div": "Ketua Bidang"
+            },
+			{
+				"id": 230,
+				"div": "Staf"
             }
         ],
         "moto": "mm"
@@ -65,10 +64,12 @@
         "posisi": "Bidang III - Rumah Tangga",
         "user": [
             {
-			"id": 228,
-                "name": "Restu Teguh Raharjo",
-                "ang": "Pratisena Danadiaksa",
-                "image":"xx.png"
+				"id": 228,
+                "div": "Ketua Bidang"
+            },
+			{
+				"id": 230,
+				"div": "Staf"
             }
         ],
         "moto": "mm"
@@ -77,10 +78,12 @@
         "posisi": "Bursa",
         "user": [
             {
-			"id": 228,
-                "name": "abudu",
-                "ang": "GB",
-                "image":"xx.png"
+				"id": 221,
+                "div": "Ketua Bidang"
+            },
+			{
+				"id": 230,
+				"div": "Staf"
             }
         ],
         "moto": "mm"
@@ -89,11 +92,14 @@
         "posisi": "SAR",
         "user": [
             {
-			"id": 232,
-                "name": "abudu",
-                "ang": "GB",
-                "image":"xx.png"
+				"id": 232,
+				"div": "Ketua Bidang"
+            },
+			{
+				"id": 230,
+				"div": "Staf"
             }
+            
         ],
         "moto": "mm"
     },
@@ -101,10 +107,12 @@
         "posisi": "Pendidikan dak Kaderisasi",
         "user": [
             {
-			"id": 233,
-                "name": "abudu",
-                "ang": "GB",
-                "image":"xx.png"
+				"id": 233,
+				"div": "Ketua Bidang"
+            },
+			{
+				"id": 230,
+				"div": "Staf"
             }
         ],
         "moto": "mm"

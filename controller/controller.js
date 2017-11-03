@@ -35,11 +35,6 @@ app.controller('anggotaCtrl', ['$scope', 'Items', 'Angkatan', function ($scope, 
             $scope.angkatan = successResponse;
         });
 
-        // dont delete
-        // console.log($scope.anggota.$$state);
-
-
-
         $scope.getAnggota = function (year) {
 			// $scope.x = false;
             var y = year.toString().slice(2);
@@ -69,9 +64,6 @@ app.controller('anggotaCtrl', ['$scope', 'Items', 'Angkatan', function ($scope, 
 				for(j=0; j<obj.length; j++){
 					
 				$scope.anggota[j] = angg[obj[j]];
-				// console.log($scope.anggota[j]);
-//				console.log($scope.anggota[obj[j]].nama);
-				// console.log($scope.anggota[]);
 				}
 				
 
@@ -83,9 +75,7 @@ app.controller('anggotaCtrl', ['$scope', 'Items', 'Angkatan', function ($scope, 
     }]);
 app.controller('appCtrl', [function ($scope) {}]);
 app.controller('divisiCtrl', function ($scope, $http) {
-//    $scope.idDivisi = "Hello world";
     var url = "src/divisi.json";
-    // var url = "src/divisi.json";
     $http.get(url).then(function (response) {
         $scope.divisi = response.data;
         for (i = 0; i < $scope.divisi.length; i++) {
@@ -99,16 +89,59 @@ app.controller('divisiCtrl', function ($scope, $http) {
         });
 
 //        $scope.desk = ;
-        console.log(docx);
+        // console.log(docx);
     });
 
 });
-app.controller('pengurusCtrl', function ($scope, $http) {
+app.controller('pengurusCtrl', ["$scope", "$http", "Items", function ($scope, $http, Items) {
+	
+	var v = "src/structure.json";
+	$http.get(v).then(function (response) {
+		
+		var sum = response.data.length;
+		
+		for(i=0; i<sum; i++){
+			console.log(response.data[i].user[0].id);
+		}
+		
+		// console.log(response.data[1].user[0].id);
+		// console.log(sum);
+		
+	});
+	$scope.getIdUser = function(params) {
+			// console.log(params);		
+		Items.then(function (res) {
+			// console.log(res[params]);
+			
+		});
+	};
+	
     var url = "src/pengurus.json";
     $http.get(url).then(function (response) {
         $scope.pengurus = response.data;
+		
+		Items.then(function (successResponse) {
+		var setId;
+		var setObjStructur = {};
+		
+		for(i = 0; i < $scope.pengurus.length; i++) {
+			// console.log($scope.pengurus[i].user[0].id);
+			
+			setId = $scope.pengurus[i].user[0].id;
+			setObjStructur[i] = successResponse[setId];
+			
+		}
+		
+		var objId = Object.keys(setObjStructur);
+		$scope.pengurus.obj = [];
+		for(j = 0; j < objId.length; j++) {
+			$scope.pengurus.obj[j] = setObjStructur[j];
+		}
+	});
+		
+		// console.log($scope.pengurus[0].user[0].id);
     });
-});
+}]);
 
 app.controller('divCtrl', ['$scope', '$routeParams', '$http', function ($scope, $routeParams, $http) {
         // console.log($routeParams.postId);
