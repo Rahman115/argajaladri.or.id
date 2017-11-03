@@ -35,25 +35,34 @@
                 </div>
                 <!-- /.col-md-4 -->
                 <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h2 class="card-title">Card Two</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">More Info</a>
-                        </div>
-                    </div>
+				<div class="card" style="width: 20rem;">
+  <div class="card-header">
+    Featured
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+</div>
+                    
                 </div>
                 <!-- /.col-md-4 -->
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
-                        <div class="card-body">
-                            <h2 class="card-title">Card Three</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+					  <div class="card-header">
+    Divisi Argajaladri
+  </div>
+                        <div class="list-group list-group-flush">
+						<!-- card-body  -->
+                            <!-- <p class="card-text"  class="list-group"> -->
+							
+                               <a class="list-group-item list-group-item-action"  ng-repeat="d in divisi" href="#!/divisi/{{d.id}}" >{{d.divisi}}</a>
+							
+						   <!-- </p> -->
                         </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">More Info</a>
+                        <div class="card-footer text-right">
+                            <!-- <a href="#" class="btn btn-primary btn-sm">More Info</a> -->
                         </div>
                     </div>
                 </div>

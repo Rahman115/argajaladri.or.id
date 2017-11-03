@@ -7,3 +7,8 @@ body {
     padding-top: 56px;
   }
 }
+
+.card-header {
+	background-color: #5a93c7;
+	color: white;
+}

@@ -73,7 +73,25 @@ app.controller('anggotaCtrl', ['$scope', 'Items', 'Angkatan', function ($scope, 
         };
 
     }]);
-app.controller('appCtrl', [function ($scope) {}]);
+app.controller('appCtrl', ['$scope', 'Home',  function ($scope, Home) {
+	
+	
+	Home.then(function (response) {
+			console.log(response[0].desk);
+			
+			
+		});
+		
+		
+	$scope.divisi = [
+            {'id': 1, 'divisi': 'Divisi Mountenering'},
+            {'id': 2, 'divisi': 'Divisi Caving'},
+            {'id': 3, 'divisi': 'Divisi Rafting'},
+            {'id': 4, 'divisi': 'Divisi Diving'},
+            {'id': 5, 'divisi': 'Divisi Climbing'}
+        ];
+	
+}]);
 app.controller('divisiCtrl', function ($scope, $http) {
     var url = "src/divisi.json";
     $http.get(url).then(function (response) {

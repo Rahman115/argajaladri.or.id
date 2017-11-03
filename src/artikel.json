@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "date": "26/01/2016",
+        "judul": "Ical dukung Jokowi, Agung Laksono makin panas",
+        "write": "Admin",
+        "Tag": 3,
+        "desk": "doc1.txt",
+        "image": "image.jpg"
+    },
+    {
+        "id": 2,
+        "date": "26/01/2016",
+        "judul": "Kriteria calon pendamping Ahok di Pilgub DKI",
+        "write": "Admin",
+        "Tag": 3,
+        "desk": "doc2.txt",
+        "image": "image.jpg"
+    },
+    {
+        "id": 3,
+        "date": "26/01/2016",
+        "judul": "JK sebut Jokowi senang Golkar dukung pemerintah",
+        "write": "Admin",
+        "Tag": 3,
+        "desk": "doc3.txt",
+        "image": "image.jpg"
+    },
+    {
+        "id": 4,
+        "date": "26/01/2016",
+        "judul": "Setelah ARRC 2015, Yudhistira menatap MotoGP dengan Honda",
+        "write": "Admin",
+        "Tag": 3,
+        "desk": "doc4.txt",
+        "image": "image.jpg"
+    },
+    {
+        "id": 5,
+        "date": "04/11/2017",
+        "judul": "Pelaksanaan Pra-Pendidikan Argajaladri 2017",
+        "write": "Admin",
+        "Tag": 3,
+        "desk": "p_pradiksar2017.txt",
+        "image": "pradiksar.jpg"
+    }
+]

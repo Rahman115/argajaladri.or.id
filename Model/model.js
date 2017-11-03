@@ -9,6 +9,18 @@ app.service('Model', ['$http', function ($http) {
             });
         };
     }]);
+	
+app.factory('Home', ['$http', function($http) {
+	var url = "src/artikel.json";
+	var Home = $http.get(url).then(function (response) {
+		var arr = response.data;
+		
+		// return arr;
+		return JSON.parse(angular.toJson(arr));
+	});
+	
+	return Home;
+}]);
 
 app.factory('Items', ['$http', function ($http) {
         var Url = "src/anggota.csv";
