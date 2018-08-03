@@ -11,13 +11,26 @@ app.service('Model', ['$http', function ($http) {
     }]);
 	
 app.factory('Home', ['$http', function($http) {
-	var url = "src/artikel.json";
+	var url = "src/berita.csv";
 	var Home = $http.get(url).then(function (response) {
         
-        // console.log(response.data);
+        var arrayData = response.data;
+        var array = arrayData.split('\n');
 
-		return response.data;
-		
+        var v = [];
+        for(i=0; i < array.length -; i++){
+            var value = array[i].split(';');
+            v[i] = {
+                'date': value[0],
+                'judul': value[1],
+                'write':value[2],
+                'Tag': value[3],
+                'desk': value[4],
+                'image': value[5]
+            };
+        }
+
+        return JSON.parse(angular.toJson(v));
 	});
 	
 	return Home;
