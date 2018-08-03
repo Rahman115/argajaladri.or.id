@@ -4,17 +4,17 @@
     <div class="bottom-middle-panel">
         <ul>
 
-            <li ng-repeat="art in artikel" >
+            <li ng-repeat="b in berita" >
                 <div class="date">
-                    {{art.tanggal}}
+                    {{b.Waktu}}
                 </div>
                 <div class="title">
                     <a href="#">
-                        {{art.judul}}
+                        {{b.Judul}}
                     </a>
                 </div>
                 <div class="text">
-                    {{art.isi | limitTo: 255}}{{art.isi.length > 255 ? ' ...' : ''}}
+                    <!-- {{art.isi | limitTo: 255}}{{art.isi.length > 255 ? ' ...' : ''}} -->
                 </div>
             </li>
 

@@ -13,14 +13,40 @@ app.service('Model', ['$http', function ($http) {
 app.factory('Home', ['$http', function($http) {
 	var url = "src/artikel.json";
 	var Home = $http.get(url).then(function (response) {
-		var arr = response.data;
+        
+        // console.log(response.data);
+
+		return response.data;
 		
-		// return arr;
-		return JSON.parse(angular.toJson(arr));
 	});
 	
 	return Home;
 }]);
+
+app.factory('Info', ['$http', function($http) {
+    var url = "src/berita.csv";
+    var Info = $http.get(url).then(function(res) {
+        var arrayData = res.data;
+        var array = arrayData.split('\n');
+
+        // console.log(arrayData);
+
+        var v = [];
+        for(i=0; i < array.length - 1; i++){
+            var value = array[i].split(';');
+            v[i] = {
+                'Waktu': value[0],
+                'Judul': value[1],
+                'Writing':value[2],
+                'Tag': value[3],
+                'Deskripsi': value[4],
+                'Image': value[5]
+            };
+        }
+        return JSON.parse(angular.toJson(v));
+    })
+    return Info;
+}])
 
 app.factory('Items', ['$http', function ($http) {
         var Url = "src/anggota.csv";
@@ -61,6 +87,29 @@ app.factory('Angkatan', ['$http', function ($http) {
         });
         return Angkatan;
     }]);
+
+app.factory('Agenda', ['$http', function ($http) {
+    var url = "src/agenda.csv";
+    var Agenda = $http.get(url).then(function (response) {
+        var array = response.data;
+        var arr = array.split('\n');
+        
+        var v = [];
+        for (i=0; i<arr.length-1; i++){
+            var value = arr[i].split(';');
+            
+            v[i] = {
+                'id': value[0],
+                'number': value[1],
+                'kegiatan': value[2],
+                'tujuan': value[3],
+                'waktu': value[4]
+            };
+        }
+        return JSON.parse(angular.toJson(v));
+    });
+    return Agenda;
+}])
 	
 // app.factory('DivisiDetail', ['$http', function($http) {
 // var url = "src/divisi.json";

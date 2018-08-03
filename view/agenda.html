@@ -1,0 +1,30 @@
+<h2 class="title-top">Berita Terbaru</h2>
+<!--Informasi Terbaru-->
+<div class="middle-panel">
+    <div class="bottom-middle-panel">
+        <ul>
+
+            <li ng-repeat="adg in agenda" >
+                {{adg.posisi}}
+                <!-- <ul>
+                <li ng-repeat="meta in adg.metaAgenda" >
+                    {{meta.kegiatan}}
+                </li>
+            </ul> -->
+            <table class="table">
+                    <tr>
+                        <th>Kegiatan</th>
+                        <th>Tujuan</th>
+                        <th>Pelaksanaan</th>
+                    </tr>
+                    <tr ng-repeat="meta in adg.metaAgenda">
+                        <td>{{meta.kegiatan}}</td>
+                        <td>{{meta.tujuan}}</td>
+                        <td>{{meta.waktu}}</td>
+                    </tr>
+                    </table>
+            </li>
+
+        </ul>
+    </div>
+</div>

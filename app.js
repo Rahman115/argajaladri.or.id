@@ -15,6 +15,10 @@ app.config(function ($routeProvider) {
                 templateUrl: 'view/artikel.html',
                 controller: 'artikelCtrl'
             })
+			.when('/agenda', {
+				templateUrl: 'view/agenda.html',
+				controller: 'agendaCtrl'
+			})
             .when('/home', {
                 templateUrl: 'view/home.html',
                 controller: 'appCtrl'

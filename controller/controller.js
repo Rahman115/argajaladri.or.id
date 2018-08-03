@@ -1,6 +1,7 @@
 //(function () {
 //    "use strict";
 var app = angular.module("app.controllers", []);
+
 app.factory('Artikel', ['$http', function ($http) {
         var Ar = "src/artikel.csv";
         var Artikel = $http.get(Ar).then(function (response) {
@@ -10,22 +11,15 @@ app.factory('Artikel', ['$http', function ($http) {
         return Artikel;
     }]);
 
-app.controller('artikelCtrl', ['$scope', 'Artikel', function ($scope, Artikel) {
-        Artikel.then(function (sResponse) {
-            $scope.arr = sResponse.split('\n');
-            $scope.artikel = [];
-            for (i = 1; i < $scope.arr.length - 1; i++) {
-                $scope.val = $scope.arr[i].split(';');
-                $scope.artikel[i] = {
-                    tanggal: $scope.val[0],
-                    judul: $scope.val[1],
-                    penulis: $scope.val[2],
-                    tag: $scope.val[3],
-                    isi: $scope.val[4]
-                };
-            }
-//            console.log($scope.artikel);
-        });
+
+app.controller('artikelCtrl', ['$scope', '$http', 'Info', function ($scope, $http, Info) {
+    Info.then(function (params) {
+        $scope.berita = {};
+        $scope.berita = params;
+
+        console.log($scope.berita);
+        
+    });
     }]);
 
 app.controller('anggotaCtrl', ['$scope', 'Items', 'Angkatan', function ($scope, Items, Angkatan) {
@@ -74,22 +68,46 @@ app.controller('anggotaCtrl', ['$scope', 'Items', 'Angkatan', function ($scope, 
 
     }]);
 app.controller('appCtrl', ['$scope', '$http', 'Home',  function ($scope, $http, Home) {
-	
-	
 	Home.then(function (response) {
-		
 		$scope.artikel = response;
+		
+        var v = [];
+        
+		for(i=0; i< response.length; i++) {
+            var txt = "src/artikel/" + response[i].desk;
+            
+			// v[i] = $http.get(txt).success(function (r) {
+            //     console.log(r.data);
+			//  return r.data;
+			// });
+		}
+		
+		
+			// console.log(v);
+			// console.log(Object.keys(v));
+			// console.log(Object.keys(v[0]));
+			// console.log(Object.keys(v[0].$$state));
 			
-			var txt = "src/artikel/" + response[0].desk;
-			$http.get(txt).then(function (res) {				
-				console.log(res.data);
-			});
-			
-			
+			// https://stackoverflow.com/questions/41973109/http-in-a-service-returns-state-object
 			
 		});
 	
-
+	// $scope.doc = function	(params) {
+		// var txt = "src/artikel/" + params;
+		
+		// $http.get(txt).then(function (r) {
+			
+		// return r.data;
+		// });
+		
+		// 				
+				// return res.data;
+		// console.log(res.data);
+		// });
+		
+		// return txt;
+		
+	// };
 		
 	$scope.divisi = [
             {'id': 1, 'divisi': 'Divisi Mountenering'},
@@ -212,3 +230,28 @@ app.controller('myDivisiCtrl', ['$scope', function ($scope) {
 
     }]);
 //}());
+
+app.controller('agendaCtrl', ['$scope', '$http', 'Agenda', function($scope, $http, Agenda) {
+    Agenda.then(function (successResponse) {
+        $scope.metaAgenda = successResponse;
+
+        var url = "src/agenda.json";
+        $http.get(url).then(function(response) {
+            $scope.agenda = response.data;
+
+                for(j = 0; j < $scope.agenda.length; j++){
+                    $scope.agenda[j].metaAgenda = {};
+                    for(i=0; i < $scope.metaAgenda.length; i++){
+                        
+                        if($scope.metaAgenda[i].id == $scope.agenda[j].id){
+
+                            $scope.agenda[j].metaAgenda[$scope.metaAgenda[i].number] = $scope.metaAgenda[i];
+                            
+                        } // end if
+                } // end for i
+            } // end for j
+            console.log($scope.agenda);
+            // console.log($scope.metaAgenda[0].id); 
+        }); 
+    });
+}]);
