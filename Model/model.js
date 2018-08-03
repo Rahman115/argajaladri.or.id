@@ -18,7 +18,7 @@ app.factory('Home', ['$http', function($http) {
         var array = arrayData.split('\n');
 
         var v = [];
-        for(i=0; i < array.length -; i++){
+        for(i=0; i < array.length -1; i++){
             var value = array[i].split(';');
             v[i] = {
                 'date': value[0],
