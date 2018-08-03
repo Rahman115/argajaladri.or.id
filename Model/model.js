@@ -31,7 +31,7 @@ app.factory('Home', ['$http', function($http) {
         }
 
         return JSON.parse(angular.toJson(v));
-	});
+	})
 	
 	return Home;
 }]);
