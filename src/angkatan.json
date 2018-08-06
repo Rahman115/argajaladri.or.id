@@ -180,5 +180,12 @@
         "angkatan": "Bramanta Wasundara",
         "arti":"Pengembara Bumi",
 		"jumlah":4
+    },
+    {
+        "id":27,
+		"tahun": 2018,
+        "angkatan": "Bregada Garjita",
+        "arti":"Pasukan Kebanggaan",
+		"jumlah":10
     }
 ]
