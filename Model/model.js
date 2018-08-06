@@ -11,28 +11,10 @@ app.service('Model', ['$http', function ($http) {
     }]);
 	
 app.factory('Home', ['$http', function($http) {
-	var url = "src/berita.csv";
+    var url = "src/artikel.json";
 	var Home = $http.get(url).then(function (response) {
-        
-        var arrayData = response.data;
-        var array = arrayData.split('\n');
-
-        var v = [];
-        for(i=0; i < array.length - 1; i++){
-            var value = array[i].split(';');
-            v[i] = {
-                'date': value[0],
-                'judul': value[1],
-                'write':value[2],
-                'Tag': value[3],
-                'desk': value[4],
-                'image': value[5]
-            };
-        }
-
-        return JSON.parse(angular.toJson(v));
+        return response.data;
 	})
-	
 	return Home;
 }]);
 
@@ -48,17 +30,26 @@ app.factory('Info', ['$http', function($http) {
         for(i=0; i < array.length - 1; i++){
             var value = array[i].split(';');
             v[i] = {
-                'Waktu': value[0],
-                'Judul': value[1],
-                'Writing':value[2],
-                'Tag': value[3],
-                'Deskripsi': value[4],
-                'Image': value[5]
+                'id': value[0],
+                'Waktu': value[1],
+                'Judul': value[2],
+                'Writing':value[3],
+                'Tag': value[4],
+                'Deskripsi': value[5],
+                'Image': value[6]
             };
         }
         return JSON.parse(angular.toJson(v));
     })
     return Info;
+}])
+
+app.factory('Family', ['$http', function ($http) {
+    var Url = "src/anggota.json";
+    var Family = $http.get(Url).then(function (response) {
+        return response.data;
+    });
+    return Family;
 }])
 
 app.factory('Items', ['$http', function ($http) {
@@ -123,6 +114,8 @@ app.factory('Agenda', ['$http', function ($http) {
     });
     return Agenda;
 }])
+
+
 	
 // app.factory('DivisiDetail', ['$http', function($http) {
 // var url = "src/divisi.json";

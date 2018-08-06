@@ -22,8 +22,8 @@ app.controller('artikelCtrl', ['$scope', '$http', 'Info', function ($scope, $htt
     });
     }]);
 
-app.controller('anggotaCtrl', ['$scope', 'Items', 'Angkatan', function ($scope, Items, Angkatan) {
-        $scope.hideElement = false;
+app.controller('anggotaCtrl', ['$scope', 'Angkatan', 'Family', function ($scope, Angkatan, Family) {
+    $scope.hideElement = false;
         // $scope.getId = ;
         Angkatan.then(function (successResponse) {
             $scope.angkatan = successResponse;
@@ -34,34 +34,61 @@ app.controller('anggotaCtrl', ['$scope', 'Items', 'Angkatan', function ($scope, 
             var y = year.toString().slice(2);
             // console.log(y);
 
-            Items.then(function (successResponse) {
-                var ang = successResponse;
+            Family.then(function (res) {
+                var dataAnggota = res;
                 var id;
                 var getId;
-
-                // console.log(ang);
                 var angg = {};
-                // console.log(ang.length);
-                for (i = 0; i < ang.length; i++) {
-                    id = successResponse[i].id;
-                    getId = id.split('.');
-                    if (getId[1] == y) {
 
-                        angg[i] = successResponse[i];
-                        // console.log(angg[i]);
-                    }
-                }
+                //console.log(dataAnggota);
+                // no_induk
+                for(i=0; i < dataAnggota.length; i++){
+                    id = dataAnggota[i].no_induk;
+                    getId = id.split('.');
+                    if(getId[1] == y) {
+                        angg[i] = res[i];
+                    } // end if
+                } // end for
+
                 var obj = Object.keys(angg);
-				$scope.obj = obj;
+                $scope.obj = obj;
 				$scope.anggota = [];
 				
 				for(j=0; j<obj.length; j++){
 					
-				$scope.anggota[j] = angg[obj[j]];
-				}
+                $scope.anggota[j] = angg[obj[j]];
+                // console.log($scope.anggota[j].no_induk);
+				} // end for j
+                
+            });
+
+            // Items.then(function (successResponse) {
+            //     var ang = successResponse;
+            //     var id;
+            //     var getId;
+
+            //     var angg = {};
+            //     // console.log(ang.length);
+            //     for (i = 0; i < ang.length; i++) {
+            //         id = successResponse[i].id;
+            //         getId = id.split('.');
+            //         if (getId[1] == y) {
+
+            //             angg[i] = successResponse[i];
+            //             // console.log(angg[i]);
+            //         }
+            //     }
+            //     var obj = Object.keys(angg);
+			// 	$scope.obj = obj;
+			// 	$scope.anggota = [];
+				
+			// 	for(j=0; j<obj.length; j++){
+					
+			// 	$scope.anggota[j] = angg[obj[j]];
+			// 	}
 				
 
-            });
+            // });
 			// $scope.x = true;
             return y;
         };
@@ -70,7 +97,9 @@ app.controller('anggotaCtrl', ['$scope', 'Items', 'Angkatan', function ($scope, 
 app.controller('appCtrl', ['$scope', '$http', 'Home',  function ($scope, $http, Home) {
 	Home.then(function (response) {
 		$scope.artikel = response;
-		
+        
+        // console.log($scope.artikel);
+
         var v = [];
         
 		for(i=0; i< response.length; i++) {
@@ -137,15 +166,15 @@ app.controller('divisiCtrl', function ($scope, $http) {
     });
 
 });
-app.controller('pengurusCtrl', ["$scope", "$http", "Items", function ($scope, $http, Items) {
+app.controller('pengurusCtrl', ["$scope", "$http", "Items", "Family", function ($scope, $http, Items, Family) {
 	
 	var v = "src/structure.json";
 	$http.get(v).then(function (response) {
-		
+		// console.log(response.data);
 		var sum = response.data.length;
 		
 		for(i=0; i<sum; i++){
-			console.log(response.data[i].user[0].id);
+			// console.log(response.data[i].user[0].id);
 		}
 		
 		// console.log(response.data[1].user[0].id);
@@ -163,7 +192,29 @@ app.controller('pengurusCtrl', ["$scope", "$http", "Items", function ($scope, $h
     var url = "src/pengurus.json";
     $http.get(url).then(function (response) {
         $scope.pengurus = response.data;
-		
+        var responseValue = response.data;
+        var ar = [];
+        for(i=0; i < responseValue.length; i++){
+            for(j=0; j < response.data[i].user.length; j++){
+                $scope.id = response.data[i].user[j].id;
+                ar = $scope.id;
+                Family.then(function(resFamily){
+                    var noInduk = resFamily[ar].no_induk;
+                    //var splitNoInduk = noInduk.split('.');
+                    // if(splitNoInduk[2] == response.data[i].user[j].id){
+                         console.log(noInduk);
+                    // }
+                    
+                            
+                });
+                // console.log(j);
+                
+                
+                
+            }
+            
+        }
+
 		Items.then(function (successResponse) {
 		var setId;
 		var setObjStructur = {};
@@ -229,7 +280,7 @@ app.controller('myDivisiCtrl', ['$scope', function ($scope) {
 
 
     }]);
-//}());
+
 
 app.controller('agendaCtrl', ['$scope', '$http', 'Agenda', function($scope, $http, Agenda) {
     Agenda.then(function (successResponse) {
@@ -255,3 +306,48 @@ app.controller('agendaCtrl', ['$scope', '$http', 'Agenda', function($scope, $htt
         }); 
     });
 }]);
+
+app.controller('artikelDetailCtrl', ['$scope', '$routeParams', '$http', 'Home', function($scope, $routeParams, $http, Home) {
+    
+    var id = $routeParams.postId;
+
+    Home.then(function (res){
+        for(i=0; i < res.length; i++){
+            if(res[i].id == id){
+                $scope.artikelDetail = res[i];
+                var doc = "src/artikel/"+res[i].desk;
+
+                $http.get(doc).then(function (txt){
+                    
+                    var arr = txt.data;
+                    var a = arr.split('\n');
+                    $scope.desk = txt.data;
+                    console.log(a);
+                });
+
+                // var txtFile = new XMLHttpRequest();
+                // var m = txtFile.open("GET", doc, true);
+
+                // console.log(m);
+                // txtFile.onreadystatechange = function(){
+                //     if(txtFile.readyState ===4 && txtFile.status == 200){
+                //         allText = txtFile.responseText;
+                        
+                //     }
+                //     document.getElementById('txt').innerHTML = allText;
+                // }
+
+                
+            }
+            
+        }
+        
+    });
+    
+
+    
+    var url = "src/artikel.json";
+
+    
+
+}])

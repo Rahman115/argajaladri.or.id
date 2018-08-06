@@ -43,6 +43,10 @@ app.config(function ($routeProvider) {
                 templateUrl: 'view/divisidetail.html',
                 controller: 'divCtrl'
             })
+            .when('/artikel/:postId', {
+                templateUrl: 'view/artikeldetail.html',
+                controller: 'artikelDetailCtrl'
+            })
             .otherwise({redirectTo: '/home'});
 });
 //}());
