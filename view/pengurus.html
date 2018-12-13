@@ -6,8 +6,12 @@
             <li ng-repeat="arr in pengurus" >
                 {{arr.posisi}}
                 <ul>
-                    <li ng-repeat="anggota in arr.user" >
-					{{anggota.id}}
+                    <li ng-repeat="anggota in arr.user" ng-init="idPengurus(anggota.id)">
+                        {{varPengurus[anggota.id - 1].nama}}
+                            <!-- <div  ng-model-options="metaPengurus.nama">
+                                    
+                            </div> -->
+                            
 						<!-- <div ng-model="getIdUser(anggota.id);"> -->
 						<!-- </div> -->
                     </li>

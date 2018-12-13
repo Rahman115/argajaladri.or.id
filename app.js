@@ -43,6 +43,10 @@ app.config(function ($routeProvider) {
                 templateUrl: 'view/divisidetail.html',
                 controller: 'divCtrl'
             })
+            .when('/anggota/:postId', {
+                templateUrl: 'view/anggotadetail.html',
+                controller: 'anggotaDetailCtrl'
+            })
             .when('/artikel/:postId', {
                 templateUrl: 'view/artikeldetail.html',
                 controller: 'artikelDetailCtrl'

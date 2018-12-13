@@ -4,8 +4,8 @@
         "posisi": "Ketua Umum",
         "user": [
             {
-                "id": 233,
-                "sebagai": "Ketua Bidang"
+                "id": 231,
+                "sebagai": "Ketua Umum Argajaladri"
                 }
         ],
         "moto": "mm"
@@ -15,8 +15,8 @@
         "posisi": "Sekretaris Umum",
         "user": [
             {
-                "id": 234,
-                "sebagai": "Ketua Bidang"
+                "id": 242,
+                "sebagai": "Sekretaris Umum Argajaladri"
                 }
         ],
         "moto": "mm"
@@ -26,8 +26,8 @@
         "posisi": "Bendahara Umum",
         "user": [
             {
-                "id": 235,
-                "sebagai": "Ketua Bidang"
+                "id": 240,
+                "sebagai": "Bendahara Umum Argajaladri"
                 }
         ],
         "moto": "mm"
@@ -36,7 +36,7 @@
         "posisi": "Bidang I",
         "user": [
             {
-                "id": 236,
+                "id": 246,
                 "sebagai": "Ketua Bidang"
                 }
         ],
@@ -46,7 +46,7 @@
         "posisi": "Bidang II",
         "user": [
             {
-                "id": 237,
+                "id": 235,
                 "sebagai": "Ketua Bidang"
                 }
         ],
@@ -56,7 +56,7 @@
         "posisi": "Bidang III - Rumah Tangga",
         "user": [
             {
-                "id": 238,
+                "id": 234,
                 "sebagai": "Ketua Bidang"
                 },
                 {

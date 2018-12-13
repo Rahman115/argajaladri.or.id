@@ -168,7 +168,9 @@ app.controller('divisiCtrl', function ($scope, $http) {
 });
 app.controller('pengurusCtrl', ["$scope", "$http", "Items", "Family", function ($scope, $http, Items, Family) {
 	
-	var v = "src/structure.json";
+    
+
+    var v = "src/structure.json";
 	$http.get(v).then(function (response) {
 		// console.log(response.data);
 		var sum = response.data.length;
@@ -187,33 +189,57 @@ app.controller('pengurusCtrl', ["$scope", "$http", "Items", "Family", function (
 			// console.log(res[params]);
 			
 		});
-	};
+    };
+    
+    
 	
     var url = "src/pengurus.json";
     $http.get(url).then(function (response) {
         $scope.pengurus = response.data;
         var responseValue = response.data;
         var ar = [];
-        for(i=0; i < responseValue.length; i++){
-            for(j=0; j < response.data[i].user.length; j++){
-                $scope.id = response.data[i].user[j].id;
-                ar = $scope.id;
-                Family.then(function(resFamily){
-                    var noInduk = resFamily[ar].no_induk;
-                    //var splitNoInduk = noInduk.split('.');
-                    // if(splitNoInduk[2] == response.data[i].user[j].id){
-                         console.log(noInduk);
-                    // }
-                    
-                            
-                });
-                // console.log(j);
-                
-                
-                
-            }
+
+        // console.log(responseValue);
+        $scope.idPengurus = function(vari){
             
-        }
+        
+        
+        Family.then(function(resFamily){
+            
+            console.log(vari);
+                    $scope.varPengurus = resFamily;
+                    $scope.metaPengurus = resFamily[vari - 1];
+                    console.log($scope.metaPengurus);
+            
+            for(i=0; i < responseValue.length; i++){
+                for(j=0; j < response.data[i].user.length; j++){
+                    $scope.id = response.data[i].user[j].id;
+                    ar = $scope.id;
+                    // if()
+                    
+                    // console.log(ar);
+                    // $scope.metaPengurus = resFamily[ar - 1];
+                    //console.log(resFamily[ar - 1]);
+                    
+
+                    
+                    
+                    
+                    
+                } // end for j
+                
+            } // end for i
+            // var noInduk = resFamily[ar].no_induk;
+            //var splitNoInduk = noInduk.split('.');
+            // if(splitNoInduk[2] == response.data[i].user[j].id){
+                //  console.log($scope.pengurus);
+            // }
+            
+                    
+        }); // end Family function
+    } // end $scope.ar
+
+        
 
 		Items.then(function (successResponse) {
 		var setId;
@@ -338,16 +364,13 @@ app.controller('artikelDetailCtrl', ['$scope', '$routeParams', '$http', 'Home', 
                 // }
 
                 
-            }
-            
-        }
-        
+            }   
+        } 
     });
-    
-
-    
     var url = "src/artikel.json";
+}]);
 
+app.controller('anggotaDetailCtrl', ['$scope', '$routeParams', '$http', function ($scope, $routeParams, $http) {
+    var id = $routeParams.postId;
     
-
 }])
