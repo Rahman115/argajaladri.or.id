@@ -11,6 +11,10 @@ app.config(function ($routeProvider) {
                 templateUrl: 'view/anggota.html',
                 controller: 'anggotaCtrl'
             })
+            .when('/anggota/:postId', {
+                templateUrl: 'view/anggotadetail.html',
+                controller: 'anggotaDetailCtrl'
+            })
             .when('/artikel', {
                 templateUrl: 'view/artikel.html',
                 controller: 'artikelCtrl'
@@ -42,10 +46,6 @@ app.config(function ($routeProvider) {
             .when('/divisi/:postId', {
                 templateUrl: 'view/divisidetail.html',
                 controller: 'divCtrl'
-            })
-            .when('/anggota/:postId', {
-                templateUrl: 'view/anggotadetail.html',
-                controller: 'anggotaDetailCtrl'
             })
             .when('/artikel/:postId', {
                 templateUrl: 'view/artikeldetail.html',

@@ -7,20 +7,25 @@
 		<div class="bottom-middle-panel">
 			<table class="table">
 				<tr>
-					<th>#</th>
+
 					<th>Tahun</th>
 					<th>Nama Angkatan</th>
 					<th>Arti Angkatan</th>
 					<th>Jumlah</th>
+					<th></th>
 				</tr>
 				<tr ng-repeat="ank in angkatan">
 						
-					<td><input type="radio" ng-model="x" name="x" ng-click="getAnggota(ank.tahun);">
-					<a class="btn btn-primary btn-sm" href="#!/anggota/{{ank.tahun}}">Lihat</a></td>
+
+						<!-- <input type="radio" ng-model="x" name="x" ng-click="getAnggota(ank.tahun);"> 
+					<a class="btn btn-primary btn-sm" href="#!/anggota/{{ank.tahun}}">Lihat</a>
+						-->
 					<td>{{ank.tahun}}</td>
-					<td>{{ank.angkatan}}</td>
+					<td><b>{{ank.angkatan}}</b></td>
 					<td>{{ank.arti}}</td>
 					<td>{{ank.jumlah}}</td>
+					<td><a class="btn btn-primary btn-xs" href="#!/anggota/{{ank.tahun}}">detail</td>
+					
 		
 				</tr>
 			</table>

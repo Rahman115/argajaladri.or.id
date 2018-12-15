@@ -370,7 +370,63 @@ app.controller('artikelDetailCtrl', ['$scope', '$routeParams', '$http', 'Home', 
     var url = "src/artikel.json";
 }]);
 
-app.controller('anggotaDetailCtrl', ['$scope', '$routeParams', '$http', function ($scope, $routeParams, $http) {
+app.controller('anggotaDetailCtrl', ['$scope', '$routeParams', '$http', 'Angkatan', 'Family', function ($scope, $routeParams, $http, Angkatan, Family) {
+
     var id = $routeParams.postId;
+    var x = id.toString().slice(2);
+    console.log(x);
+    
+
+    Angkatan.then(function (res) {
+   $scope.allAngkatan = res;
+   console.log($scope.allAngkatan);
+        for(i=0; i < res.length; i++){
+   
+            if(id == res[i].tahun){
+   
+                $scope.angkatan = res[i];
+                
+            } // end if
+        } // end for
+
+        Family.then(function (res) {
+            var dataAnggota = res;
+            var id;
+            var getId;
+            var angg = {};
+
+            // var y = 01;
+            //var x = id.slice(2);
+            
+            // 
+
+            //console.log(dataAnggota);
+            // no_induk
+            for(i=0; i < dataAnggota.length; i++){
+                id = dataAnggota[i].no_induk;
+                getId = id.split('.');
+                if(getId[1] == x) {
+                    angg[i] = res[i];
+                } // end if
+            } // end for
+
+            var obj = Object.keys(angg);
+            $scope.obj = obj;
+            $scope.anggota = [];
+            
+            for(j=0; j<obj.length; j++){
+                
+            $scope.anggota[j] = angg[obj[j]];
+             console.log($scope.anggota[j].no_induk);
+            } // end for j
+            
+        });
+        
+        
+    })
+
+    
+
+    
     
 }])
