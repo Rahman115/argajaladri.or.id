@@ -346,9 +346,20 @@ app.controller('artikelDetailCtrl', ['$scope', '$routeParams', '$http', 'Home', 
                 $http.get(doc).then(function (txt){
                     
                     var arr = txt.data;
-                    var a = arr.split('\n');
-                    $scope.desk = txt.data;
+                    var a = arr.split('\n\r');
+
+                    // for(r=0; r<a.length; r++){
+                    //     if(a[r].length == 1 ){
+                         //   console.log('kosong');
+                    //         a[r] = "<br>";
+                    //     }
+                    // }
+                    
+                   // a.join();
+
                     console.log(a);
+                    $scope.desk = a;
+                    
                 });
 
                 // var txtFile = new XMLHttpRequest();
