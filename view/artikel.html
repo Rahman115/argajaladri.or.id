@@ -6,16 +6,17 @@
 
             <li ng-repeat="b in berita" >
                 <div class="date">
-                    {{b.Waktu}}
+                    {{b.date}}
                 </div>
                 <div class="title">
                     <a href="#">
-                        {{b.Judul}}
+                        {{b.judul}}
                     </a>
                 </div>
-                <div class="text">
-                    <!-- {{art.isi | limitTo: 255}}{{art.isi.length > 255 ? ' ...' : ''}} -->
+                <div class="text" ng-init="onLoadDesk(b.desk)">
+                    {{text | limitTo: 100}}{{text.length > 100 ? ' ...' : ''}}
                 </div>
+                {{docum}}
             </li>
 
         </ul>

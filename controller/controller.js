@@ -12,15 +12,58 @@ app.factory('Artikel', ['$http', function ($http) {
     }]);
 
 
-app.controller('artikelCtrl', ['$scope', '$http', 'Info', function ($scope, $http, Info) {
-    Info.then(function (params) {
-        $scope.berita = {};
-        $scope.berita = params;
+app.controller('artikelCtrl', ['$scope', '$http', 'Home', function ($scope, $http, Home) {
+    // Info.then(function (params) {
+    //     $scope.berita = {};
+    //     $scope.berita = params;
 
-        console.log($scope.berita);
+    //     console.log($scope.berita);
+        
+    // });
+    // }]);
+    
+    Home.then(function(res) {
+        
+        $scope.berita = res;
+
+        $scope.allArtikel = {};
+        
+        for(i=0; i<res.length; i++){
+
+            // $scope.allArtikel[i] = [
+            //     'j' = res[i].judul
+            // ];
+            
+            var doc = "src/artikel/"+res[i].desk;
+
+                $http.get(doc).then(function (txt){
+                    
+                    var arr = txt.data;
+                    
+                    $scope.docum = arr;
+
+                }); // end $http
+        } // end for
+
+        console.log($scope.allArtikel);    
         
     });
-    }]);
+    
+    $scope.onLoadDesk = function(myData){
+        
+        var doc = "src/artikel/"+myData;
+
+                $http.get(doc).then(function (txt){
+                    
+                    var arr = txt.data;
+                    
+                    $scope.text = arr;
+                    console.log($scope.text);
+                    
+    });
+}; // end function
+    
+}]);
 
 app.controller('anggotaCtrl', ['$scope', 'Angkatan', 'Family', function ($scope, Angkatan, Family) {
     $scope.hideElement = false;
