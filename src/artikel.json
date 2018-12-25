@@ -29,7 +29,7 @@
     {
         "id": 4,
         "date": "22/12/2018",
-        "judul": "Musyawarah Besar (MUBES) ARGAJALADRI",
+        "judul": "SAR ARGAJALADRI",
         "write": "Admin",
         "Tag": 3,
         "desk": "doc4.txt",
@@ -43,5 +43,14 @@
         "Tag": 3,
         "desk": "p_pradiksar2017.txt",
         "image": "pradiksar.jpg"
+    },
+	{
+        "id": 6,
+        "date": "25/12/2018",
+        "judul": "Musyawarah Besar Argajaladri XXVII",
+        "write": "Admin",
+        "Tag": 3,
+        "desk": "mubes_argajaladri_xxvii.txt",
+        "image": "image/mubes_argajaladri_xxvii.png"
     }
 ]
