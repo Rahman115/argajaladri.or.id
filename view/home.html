@@ -26,10 +26,10 @@
     <div class="col-md-8 mb-8">
         <div class="list-group">
 
-            <a  ng-repeat="art in artikel | orderBy:'date'" href="#!/artikel/{{art.id}}" class="list-group-item list-group-item-action flex-column align-items-start">
+            <a  ng-repeat="art in artikel | orderBy:'-date'" href="#!/artikel/{{art.id}}" class="list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-between">
                     <h5 class="mb-1">{{art.judul}}</h5>
-                    <small>{{art.date}}</small>
+                    <small>{{art.date | date:'yyyy/MM/dd'}}</small>
                 </div>
                 <!-- <p class="mb-1">{{doc(art.desk) | limitTo:5}}</p> -->
                 <!-- <p class="mb-1">{{art.isi | limitTo: 255}}{{art.isi.length > 255 ? ' ...' : ''}}</p> -->

@@ -141,7 +141,14 @@ app.controller('appCtrl', ['$scope', '$http', 'Home',  function ($scope, $http, 
 	Home.then(function (response) {
 		$scope.artikel = response;
         
-        // console.log($scope.artikel);
+        console.log($scope.artikel[0].date);
+
+        var wkt = new Date();
+        var jso = JSON.stringify(wkt);
+        
+        // var dt = JSON.parse(jso, JSON.parse);
+        
+        console.log(jso);
 
         var v = [];
         
