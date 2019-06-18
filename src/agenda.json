@@ -1,26 +1,110 @@
 [
 	{
 		"id": 0,
-		"posisi": "PnK"
+		"posisi": "Badan Otonom Pendidikan dan Kaderisasi",
+		"kegiatan": [
+			{
+				"subKegiatan": "Pra Pendidikan dasar",
+				"pelaksanaan": "minggu"
+			},
+			{
+				"subKegiatan": "Pengembaraan Angkatan",
+				"pelaksanaan": "minggu"
+			},
+			{
+				"subKegiatan": "Pendidikan Dasar",
+				"pelaksanaan": "minggu"
+			},
+			{
+				"subKegiatan": "Pengalaman Lapangan",
+				"pelaksanaan": "minggu"
+			},
+			{
+				"subKegiatan": "Pengabdian Masyarakat",
+				"pelaksanaan": "minggu"
+			},
+			{
+				"subKegiatan": "Pelantikan",
+				"pelaksanaan": "minggu"
+			}
+		]
 	},
 	{
 		"id": 1,
-		"posisi": "SAR"
+		"posisi": "Badan Otonom SAR",
+		"kegiatan": [
+			{
+				"subKegiatan": "Pelatihan Dasar Rescue",
+				"pelaksanaan": "minggu"
+			}
+		]
 	},
 	{
 		"id": 2,
-		"posisi": "BURSA"
+		"posisi": "Badan Otonom BURSA",
+		"kegiatan": [
+			{
+				"subKegiatan": "Pembuatan Kalender",
+				"pelaksanaan": "minggu"
+			},
+			{
+				"subKegiatan": "Pembuatan Kartu Tanda Anggota",
+				"pelaksanaan": "minggu"
+			}
+		]
 	},
 	{
 		"id": 3,
-		"posisi": "Bidang I"
+		"posisi": "Bidang I (Lingkungan Hidup)",
+		"kegiatan": [
+			{
+				"subKegiatan": "Pembukaan Ruang Hijau Argajaladri",
+				"pelaksanaan": "minggu"
+			},
+			{
+				"subKegiatan": "Seminar Nasional",
+				"pelaksanaan": "minggu"
+			}
+		]
 	},
 	{
 		"id": 4,
-		"posisi": "Bidang II"
+		"posisi": "Bidang II (Minat dan Bakat)",
+		"kegiatan": [
+			{
+				"subKegiatan": "Pembuatan Buku Materi Tingkat Lanjut",
+				"pelaksanaan": "minggu"
+			},
+			{
+				"subKegiatan": "Aplikasi Lapangan Diving",
+				"pelaksanaan": "minggu"
+			}
+		]
 	},
 	{
 		"id": 5,
-		"posisi": "Bidang III"
+		"posisi": "Bidang III (Rumah Tangga)",
+		"kegiatan": [
+			{
+				"subKegiatan": "Inventaris Alat",
+				"pelaksanaan": "minggu"
+			},
+			{
+				"subKegiatan": "Dies Natalis Argajaladri",
+				"pelaksanaan": "minggu"
+			},
+			{
+				"subKegiatan": "Pembelian ATK",
+				"pelaksanaan": "minggu"
+			},
+			{
+				"subKegiatan": "Pelantikan Pengurus",
+				"pelaksanaan": "minggu"
+			},
+			{
+				"subKegiatan": "Musyawarah Besar",
+				"pelaksanaan": "minggu"
+			}
+		]
 	}
 ]
