@@ -194,5 +194,12 @@
         "angkatan": "Abhita Ahingani",
         "arti":"Pasukan Kebanggaan",
 		"jumlah":11
+    },
+{
+        "id":29,
+		"tahun": 2020,
+        "angkatan": "Tuhina Hingtjala",
+        "arti":"Halimun Dikaki Gunung",
+		"jumlah":8
     }
 ]
