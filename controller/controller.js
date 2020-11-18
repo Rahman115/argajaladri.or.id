@@ -11,7 +11,7 @@ app.factory('Artikel', ['$http', function ($http) {
         return Artikel;
     }]);
 
-
+// Controller Artikel ----
 app.controller('artikelCtrl', ['$scope', '$http', 'Home', function ($scope, $http, Home) {
     // Info.then(function (params) {
     //     $scope.berita = {};
@@ -65,6 +65,7 @@ app.controller('artikelCtrl', ['$scope', '$http', 'Home', function ($scope, $htt
     
 }]);
 
+// Controller Anggota ------
 app.controller('anggotaCtrl', ['$scope', 'Angkatan', 'Family', function ($scope, Angkatan, Family) {
     $scope.hideElement = false;
         // $scope.getId = ;
@@ -137,6 +138,8 @@ app.controller('anggotaCtrl', ['$scope', 'Angkatan', 'Family', function ($scope,
         };
 
     }]);
+
+// Controller Dashboard ------
 app.controller('appCtrl', ['$scope', '$http', 'Home',  function ($scope, $http, Home) {
 	Home.then(function (response) {
 		$scope.artikel = response;
@@ -197,6 +200,8 @@ app.controller('appCtrl', ['$scope', '$http', 'Home',  function ($scope, $http, 
         ];
 	
 }]);
+
+// Controller divisi ------
 app.controller('divisiCtrl', function ($scope, $http) {
     var url = "src/divisi.json";
     $http.get(url).then(function (response) {
@@ -216,6 +221,8 @@ app.controller('divisiCtrl', function ($scope, $http) {
     });
 
 });
+
+// Controller Pengurus ------
 app.controller('pengurusCtrl', ["$scope", "$http", "Items", "Family", function ($scope, $http, Items, Family) {
 	
     
