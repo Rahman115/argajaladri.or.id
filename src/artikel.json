@@ -52,5 +52,13 @@
         "Tag": 3,
         "desk": "mubes_argajaladri_xxvii.txt",
         "image": "image/mubes_argajaladri_xxvii.png"
+    }, {
+        "id": 7,
+        "date": "17/07/2021",
+        "judul": "Ultah 29",
+        "write": "User001",
+        "Tag": 3,
+        "desk": "ultah29.txt",
+        "image": "image/DSC06737.jpg"
     }
 ]
