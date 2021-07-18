@@ -1,15 +1,17 @@
-## Selamat Datang di Sistem Informasi Argajaladri
+# Selamat Datang di Sistem Informasi Argajaladri
 
 Sebelum memulai partisipasi dalam pengembangan pemrograman di web site ini. Terbih dahulu harus memenuhi role(aturan) yang sudah berlaku.
+
 ## Mulai Mengedit
+Memulai mengedit silahkan klik [editor on GitHub](https://github.com/Rahman115/argajaladri/edit/master/README.md) dan Anda akan di arahkan ke halaman situs GitHub.
 
-# Membuat Postingan
+### Membuat Postingan
 
-# Merubah Data Anggota
+### Merubah Data Anggota
 
-# Mengubah Data Pengurus
+### Mengubah Data Pengurus
 
-# Menambah Data Divisi
+### Menambah Data Divisi
 
 You can use the [editor on GitHub](https://github.com/Rahman115/argajaladri/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
