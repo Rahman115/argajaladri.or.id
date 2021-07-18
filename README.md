@@ -3,7 +3,7 @@
 Sebelum memulai partisipasi dalam pengembangan pemrograman di web site ini. Terbih dahulu harus memenuhi role(aturan) yang sudah berlaku.
 
 ## Mulai Mengedit
-Memulai mengedit silahkan klik [editor on GitHub](https://github.com/Rahman115/argajaladri/edit/master/README.md) dan Anda akan di arahkan ke halaman situs GitHub.
+Memulai mengedit silahkan klik [editor on GitHub](https://github.com/Rahman115/argajaladri.or.id) dan Anda akan di arahkan ke halaman situs GitHub.
 
 ### Membuat Postingan
 
