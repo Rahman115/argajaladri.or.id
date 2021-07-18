@@ -1,5 +1,16 @@
 ## Selamat Datang di Sistem Informasi Argajaladri
 
+Sebelum memulai partisipasi dalam pengembangan pemrograman di web site ini. Terbih dahulu harus memenuhi role(aturan) yang sudah berlaku.
+## Mulai Mengedit
+
+# Membuat Postingan
+
+# Merubah Data Anggota
+
+# Mengubah Data Pengurus
+
+# Menambah Data Divisi
+
 You can use the [editor on GitHub](https://github.com/Rahman115/argajaladri/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
