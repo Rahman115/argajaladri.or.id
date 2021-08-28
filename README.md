@@ -5,6 +5,15 @@ Sebelum memulai partisipasi dalam pengembangan pemrograman di web site ini. Terb
 ## Mulai Mengedit
 Memulai mengedit silahkan klik [editor on GitHub](https://github.com/Rahman115/argajaladri.or.id) dan Anda akan di arahkan ke halaman situs GitHub.
 
+Pengededitan bisa menggunakan aplikasi pihak ke tiga `Acode` bisa dicari di play store. 
+
+### Pengenalan Folder
+- `📁 controller`
+- `📁 module`
+- `📁 src`
+- ``
+- `📁 view`
+
 ### Membuat Postingan
 
 ### Merubah Data Anggota
