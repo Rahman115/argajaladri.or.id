@@ -22,7 +22,7 @@ Pengededitan bisa menggunakan aplikasi pihak ke tiga `Acode` bisa dicari di play
 
 Dibagian ini ada beberapa hal yang harus diperhatikan sebelum melakukan pengeditan.
 🔸Baca petunjuk yang telah diberikan, pastikan anda telah memahami apa yang harus dilakukan.
-🔸Mengisi data harus perhatikan tanda `"` __(petik dua)__
+🔸Mengisi data harus perhatikan tanda `"` _(petik dua)_ , upayakan semua data _String_ atau data teks harus di apit tanda petik du ex. `"data baru"`.
 ### Merubah Data Anggota
 
 ### Mengubah Data Pengurus
