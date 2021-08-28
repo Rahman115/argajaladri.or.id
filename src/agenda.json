@@ -8,7 +8,7 @@
 				"pelaksanaan": "minggu"
 			},
 			{
-				"subKegiatan": "Pengembaraan Angkatan",
+				"subKegiatan": "Peng",
 				"pelaksanaan": "minggu"
 			},
 			{
@@ -58,11 +58,11 @@
 		"posisi": "Bidang I (Lingkungan Hidup)",
 		"kegiatan": [
 			{
-				"subKegiatan": "Pembukaan Ruang Hijau Argajaladri",
+				"subKegiatan": "Hidroponik",
 				"pelaksanaan": "minggu"
 			},
 			{
-				"subKegiatan": "Seminar Nasional",
+				"subKegiatan": "Pembibitan Tanaman Buah",
 				"pelaksanaan": "minggu"
 			}
 		]
@@ -72,11 +72,15 @@
 		"posisi": "Bidang II (Minat dan Bakat)",
 		"kegiatan": [
 			{
-				"subKegiatan": "Pembuatan Buku Materi Tingkat Lanjut",
+				"subKegiatan": "Latihan rutin",
 				"pelaksanaan": "minggu"
 			},
 			{
-				"subKegiatan": "Aplikasi Lapangan Diving",
+				"subKegiatan": "Sertivikasi selam A1",
+				"pelaksanaan": "minggu"
+			},
+			{
+				"subKegiatan": "Aplikasi Refting",
 				"pelaksanaan": "minggu"
 			}
 		]
@@ -87,7 +91,7 @@
 		"kegiatan": [
 			{
 				"subKegiatan": "Inventaris Alat",
-				"pelaksanaan": "minggu"
+				"pelaksanaan": "setiap akhir bulan"
 			},
 			{
 				"subKegiatan": "Dies Natalis Argajaladri",
@@ -98,11 +102,11 @@
 				"pelaksanaan": "minggu"
 			},
 			{
-				"subKegiatan": "Pelantikan Pengurus",
+				"subKegiatan": "Musyawarah Besar",
 				"pelaksanaan": "minggu"
 			},
 			{
-				"subKegiatan": "Musyawarah Besar",
+				"subKegiatan": "Musyawarah Kerja",
 				"pelaksanaan": "minggu"
 			}
 		]
