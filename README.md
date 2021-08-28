@@ -8,14 +8,14 @@ Memulai mengedit silahkan klik [editor on GitHub](https://github.com/Rahman115/a
 Pengededitan bisa menggunakan aplikasi pihak ke tiga `Acode` bisa dicari di play store. 
 
 ### Pengenalan Folder
-- `📁 Model`
-- `📁 controller`
+- `📁 Model` - berisi file model
+- `📁 controller` - berisi function mengeksekusi perintah
 - `📁 dash`
 - `📁 doc`
 - `📁 resources`
-- `📁 src`
+- `📁 src` - berisi file - file data
 - `📁 vendor`
-- `📁 view`
+- `📁 view` - menampilkan hasil
 
 ### Membuat Postingan
 
