@@ -18,7 +18,11 @@ Pengededitan bisa menggunakan aplikasi pihak ke tiga `Acode` bisa dicari di play
 - `📁 view` - menampilkan hasil
 
 ### Sebelum melakukan edit file
+`argajaladri.or.id` merupakan situs web static yang tidak memiliki Control Admin. Jadi jika ingin melakukan perubahan, maka akan dirubah secara manual.
 
+Dibagian ini ada beberapa hal yang harus diperhatikan sebelum melakukan pengeditan.
+🔸Baca petunjuk yang telah diberikan, pastikan anda telah memahami apa yang harus dilakukan.
+🔸Mengisi data harus perhatikan tanda `"` __(petik dua)__
 ### Merubah Data Anggota
 
 ### Mengubah Data Pengurus
