@@ -17,7 +17,7 @@ Pengededitan bisa menggunakan aplikasi pihak ke tiga `Acode` bisa dicari di play
 - `📁 vendor`
 - `📁 view` - menampilkan hasil
 
-### Membuat Postingan
+### Sebelum melakukan edit file
 
 ### Merubah Data Anggota
 
