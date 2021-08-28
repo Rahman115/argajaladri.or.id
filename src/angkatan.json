@@ -201,5 +201,12 @@
         "angkatan": "Tuhina Hingtjala",
         "arti":"Halimun Dikaki Gunung",
 		"jumlah":8
+    },
+{
+        "id":30,
+		"tahun": 2021,
+        "angkatan": "Abhinaya Amita",
+        "arti":"Semangat yang Terbatas",
+		"jumlah":5
     }
 ]
