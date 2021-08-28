@@ -21,8 +21,27 @@ Pengededitan bisa menggunakan aplikasi pihak ke tiga `Acode` bisa dicari di play
 `argajaladri.or.id` merupakan situs web static yang tidak memiliki Control Admin. Jadi jika ingin melakukan perubahan, maka akan dirubah secara manual.
 
 Dibagian ini ada beberapa hal yang harus diperhatikan sebelum melakukan pengeditan.
+
 🔸Baca petunjuk yang telah diberikan, pastikan anda telah memahami apa yang harus dilakukan.
+
 🔸Mengisi data harus perhatikan tanda `"` _(petik dua)_ , upayakan semua data _String_ atau data teks harus di apit tanda petik du ex. `"data baru"`.
+
+🔸`{}` _Kurung krawal_ biasa digunakan untuk memisahkan data variabel, dan di pisahkan dengan tanda `,` _koma_. Contoh
+
+```
+...
+{
+  id = "AGJ.00.000.XY",
+  nama = "Nama Lengkap"
+  },
+  {
+    ...next data
+  }
+ ...
+```
+
+Data diatas menunjukan `id` dan `nama` adalah suatu variabel.
+
 ### Merubah Data Anggota
 
 ### Mengubah Data Pengurus
