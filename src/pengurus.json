@@ -55,8 +55,12 @@
         "posisi": "Bidang I",
         "user": [
             {
-                "id": 246,
+                "id": 277,
                 "sebagai": "Ketua Bidang"
+                },
+                {
+                    "id": 271,
+                    "sebagai": "Staf"
                 }
         ]
     },
@@ -66,6 +70,10 @@
             {
                 "id": 235,
                 "sebagai": "Ketua Bidang"
+                },
+                {
+                    "id": 273,
+                    "sebagai": "Staf"
                 }
         ]
     },
