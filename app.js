@@ -1,10 +1,11 @@
-//(function () {
-//    "use strict";
+/**
+File : app.js
+Programmer : @abuduChoy
+
+mengatur link header
+**/
 
 var app = angular.module('myApp', ["app.controllers", "app.services", "ngRoute"]);
-
-
-
 app.config(function ($routeProvider) {
     $routeProvider
             .when('/anggota', {
@@ -15,13 +16,17 @@ app.config(function ($routeProvider) {
                 templateUrl: 'view/anggotadetail.html',
                 controller: 'anggotaDetailCtrl'
             })
+	    .when('detail_anggota/:postId', {
+    		templateUrl: 'view/detailAnggota.html',
+	    	controller: 'detailAnggotaCtrl'
+    	    })
             .when('/artikel', {
                 templateUrl: 'view/artikel.html',
                 controller: 'artikelCtrl'
             })
-			.when('/agenda', {
-				templateUrl: 'view/agenda.html',
-				controller: 'agendaCtrl'
+	    .when('/agenda', {
+		templateUrl: 'view/agenda.html',
+	    	controller: 'agendaCtrl'
 			})
             .when('/home', {
                 templateUrl: 'view/home.html',
