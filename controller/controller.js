@@ -101,18 +101,17 @@ app.controller('detailAnggotaCtrl', ['$scope', '$routeParams', '$http', 'Family'
 	var id = $routeParams.postId;
     	//var x = id.toString().slice(2);
 	Family.then(function (res) {
-    		console.log(id);
+    		//console.log(id);
 		var dataAnggota = res;
 		var priv;
 		// membaca semua data
 		for(i=0; i < dataAnggota.length; i++) {
 			priv = dataAnggota[i].no_induk;
-			console.log(priv);
+			//console.log(priv);
 			if(priv == id) {
 				console.log(dataAnggota[i]);
 			} else {
-				console.log(id+'Data anggota tidak ditemukan');
-			
+				console.log('Data anggota tidak ditemukan');
 			}
 		} // end for
 		
