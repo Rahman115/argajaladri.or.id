@@ -99,9 +99,13 @@ app.controller('anggotaCtrl', ['$scope', 'Angkatan', 'Family', function ($scope,
 // Controller Detail Anggota
 app.controller('detailAnggotaCtrl', ['$scope', '$routeParams', '$http', 'Family', function ($scope, $routeParams, $http, Family) {
 	var id = $routeParams.postId;
-    	var x = id.toString().slice(2);
-	
-    	console.log(x);
+    	//var x = id.toString().slice(2);
+	Family.then(function (res) {
+    		console.log(res);
+		var dataAnggota = res;
+		
+		console.log(dataAnggota.length);
+	}
 
 }]);
 // Controller Dashboard ------
