@@ -42,11 +42,11 @@ Dibagian ini ada beberapa hal yang harus diperhatikan sebelum melakukan pengedit
 
 Data diatas menunjukan `id` dan `nama` adalah suatu variabel.
 
-### Merubah Data Anggota
+### Menambah atau Merubah Data
+#### Menambah Data Artikel
 
-### Mengubah Data Pengurus
 
-### Menambah Data Divisi
+
 
 You can use the [editor on GitHub](https://github.com/Rahman115/argajaladri/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
