@@ -96,7 +96,14 @@ app.controller('anggotaCtrl', ['$scope', 'Angkatan', 'Family', function ($scope,
         };
 
     }]);
+// Controller Detail Anggota
+app.controller('detailAnggotaCtrl', ['$scope', '$routeParams', '$http', 'Family', function ($scope, $routeParams, $http, Family) {
+	var id = $routeParams.postId;
+    	var x = id.toString().slice(2);
+	
+    	console.log(x);
 
+}]);
 // Controller Dashboard ------
 app.controller('appCtrl', ['$scope', '$http', 'Home',  function ($scope, $http, Home) {
 	Home.then(function (response) {
@@ -373,12 +380,5 @@ app.controller('anggotaDetailCtrl', ['$scope', '$routeParams', '$http', 'Angkata
             } // end for j
             
         });
-        
-        
     })
-
-    
-
-    
-    
 }])
