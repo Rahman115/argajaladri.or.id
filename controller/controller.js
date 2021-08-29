@@ -105,7 +105,7 @@ app.controller('detailAnggotaCtrl', ['$scope', '$routeParams', '$http', 'Family'
 		var dataAnggota = res;
 		
 		console.log(dataAnggota.length);
-	}
+	});
 
 }]);
 // Controller Dashboard ------
