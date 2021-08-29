@@ -57,14 +57,14 @@ Artikel di butuhkan untuk menyampaikan pesan informasi atau berita dan lain-lain
   ...
   {
   // Data sebelumnya
-    }, {  // (1)
-        "id": 7,
-        "date": "17/07/2021",
-        "judul": "Ultah 29",
-        "write": "User001",
+    }, {  // di pisahkan tanda _Koma_
+        "id": 2,
+        "date": "20/08/2021",
+        "judul": "Mubes XXI",
+        "write": "Penulis 1",
         "Tag": 3,
-        "desk": "ultah29.txt",
-        "image": "image/DSC06737.jpg"
+        "desk": "mubes_xxi.txt",
+        "image": "image/img_mubes_xxi.jpg"
     }
   ...
 
