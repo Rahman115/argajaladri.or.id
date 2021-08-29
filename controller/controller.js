@@ -103,9 +103,10 @@ app.controller('detailAnggotaCtrl', ['$scope', '$routeParams', '$http', 'Family'
 	Family.then(function (res) {
     		// console.log(res);
 		var dataAnggota = res;
+		var priv;
 		// membaca semua data
-		for(i=0; i<dataAnggota.length; i++) {
-			var priv = dataAnggota[i].no_induk;
+		for(i=0; i < dataAnggota.length; i++) {
+			priv = dataAnggota[i].no_induk;
 			if(priv == id) {
 				console.log(dataAnggota[i]);
 			}
