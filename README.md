@@ -122,3 +122,9 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
 ## Cara ganti Token di ACODE
+1. Buka aplikasi Acode
+2. pilih menu `|` di pojok kanan atas, pilih `GitHub`
+3. selanjutnya, pilih menu lagi `|` di pojok kanan atas, pilih `Keluar`
+4. setelah keluar, lakukan hal yang sama seperti cara 2
+5. Masukkan `Token` yang telah di berikan
+6. Selesai
