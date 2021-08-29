@@ -45,6 +45,13 @@ Data diatas menunjukan `id` dan `nama` adalah suatu variabel.
 ### Menambah atau Merubah Data
 #### Menambah Data Artikel
 
+Artikel di butuhkan untuk menyampaikan pesan informasi atau berita dan lain-lain. Menambah data ada beberapa tahapan yang harus diperhatikan. 
+
+1. Isi data artikel berupa deskripsi dan gambar. Deskripsi artikel di buat dalam bentuk format file `txt`. Contoh, Kita akan menambahkan data Info Mubes. 
+    - Buat file bernama `mubes_xxi.txt`,
+    - Isi file tersebut dengan informasi yang ada dan __Save__
+    - Upload data `mubes_xxi.txt` yang telah di isi pada Foleder `../src/artikel/`
+2. Tambah list data artikel
 
 
 
