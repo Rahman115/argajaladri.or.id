@@ -57,7 +57,7 @@ Artikel di butuhkan untuk menyampaikan pesan informasi atau berita dan lain-lain
   ...
   {
   // Data sebelumnya
-    }, {  // di pisahkan tanda _Koma_
+    }, {  // Tambah data
         "id": 2,
         "date": "20/08/2021",
         "judul": "Mubes XXI",
@@ -69,6 +69,7 @@ Artikel di butuhkan untuk menyampaikan pesan informasi atau berita dan lain-lain
   ...
 
 ```
+Penjelasan Code `// Data sebelumnya` merupakan data yang sudah ada sebelumnya. `// Tambah data` merupakan data yang akan di tambahkan di file `artikel.json`
 3. 
 
 
