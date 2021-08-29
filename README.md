@@ -119,7 +119,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Having trouble with Pages? Check out our [@abuduchoy](https://help.github.com/categories/github-pages-basics/) or [contact support](081226821845) and we’ll help you sort it out.
 
 ## Cara ganti Token di ACODE
 1. Buka aplikasi Acode
