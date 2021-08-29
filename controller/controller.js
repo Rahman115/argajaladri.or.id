@@ -115,7 +115,7 @@ app.controller('detailAnggotaCtrl', ['$scope', '$routeParams', '$http', 'Family'
 			}
 		} // end for
 		// console.log(dataAnggota.length);
-
+$scope.person = pv;
 		if(pv == null){
 			console.log(pv);
 		} else {
