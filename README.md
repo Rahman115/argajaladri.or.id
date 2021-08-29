@@ -50,8 +50,26 @@ Artikel di butuhkan untuk menyampaikan pesan informasi atau berita dan lain-lain
 1. Isi data artikel berupa deskripsi dan gambar. Deskripsi artikel di buat dalam bentuk format file `txt`. Contoh, Kita akan menambahkan data Info Mubes. 
     - Buat file bernama `mubes_xxi.txt`,
     - Isi file tersebut dengan informasi yang ada dan __Save__
-    - Upload data `mubes_xxi.txt` yang telah di isi pada Foleder `../src/artikel/`
-2. Tambah list data artikel
+    - Upload data `mubes_xxi.txt` yang telah di isi pada Foleder `../src/artikel/` dan
+    - Upload gambar `img_mubes_xxi.jpg` di folder `../src/image`
+2. Tambah list data artikel, dengan membuka file `../src/artikel.json`, dan tambahkan data untuk memanggil data yang telah di upload tadi.
+  ```
+  ...
+  {
+  // Data sebelumnya
+    }, {  // (1)
+        "id": 7,
+        "date": "17/07/2021",
+        "judul": "Ultah 29",
+        "write": "User001",
+        "Tag": 3,
+        "desk": "ultah29.txt",
+        "image": "image/DSC06737.jpg"
+    }
+  ...
+
+```
+3. 
 
 
 
