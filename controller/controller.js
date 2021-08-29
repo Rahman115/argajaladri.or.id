@@ -104,18 +104,25 @@ app.controller('detailAnggotaCtrl', ['$scope', '$routeParams', '$http', 'Family'
     		console.log(id);
 		var dataAnggota = res;
 		var priv;
+		var pv = null;
 		// membaca semua data
 		for(i=0; i < dataAnggota.length; i++) {
 			priv = dataAnggota[i].no_induk;
 			//console.log(priv);
 			if(priv == id) {
+				pv = "help me";
 				console.log(dataAnggota[i]);
 			} else {
-				console.log('Data anggota tidak ditemukan');
+				console.log('Data anggota');
 			}
 		} // end for
-		
 		// console.log(dataAnggota.length);
+
+		if(pv == null){
+			console.log(pv);
+		} else {
+			console.log(pv);
+		}
 	});
 
 }]); // end app controller
