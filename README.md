@@ -71,8 +71,17 @@ Artikel di butuhkan untuk menyampaikan pesan informasi atau berita dan lain-lain
 ```
 Penjelasan Code : `// Data sebelumnya` merupakan data yang sudah ada sebelumnya. `// Tambah data` merupakan data yang akan di tambahkan di file `artikel.json`
 
-Sebaiknya, lakukan _Copy_ dan _Paste_ data `// Tambah data` code yang akan di tambahkan.
-3. 
+Sebaiknya, lakukan _Copy_ dan _Paste_ data `// Tambah data`, code yang akan di tambahkan.
+- `"id"` -urutan file / data 
+- `"date"` -tanggal saat mengedit
+- `"judul"` -judul artikel
+- `"write"` -penulis dari artikel
+- `"tag"` -belum di buat default 3
+- `"desk"` -isikan file yang di upload
+- `"image"` -isikan foto yang di upload
+
+
+3. Selesai
 
 
 
