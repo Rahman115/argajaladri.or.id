@@ -16,7 +16,7 @@ app.config(function ($routeProvider) {
                 templateUrl: 'view/anggotadetail.html',
                 controller: 'anggotaDetailCtrl'
             })
-	    .when('detail_anggota/:postId', {
+	    .when('/detail_anggota/:postId', {
     		templateUrl: 'view/detailAnggota.html'
 	    	// controller: 'detailAnggotaCtrl'
     	    })
