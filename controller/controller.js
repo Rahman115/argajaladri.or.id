@@ -110,10 +110,8 @@ app.controller('detailAnggotaCtrl', ['$scope', '$routeParams', '$http', 'Family'
 			priv = dataAnggota[i].no_induk;
 			//console.log(priv);
 			if(priv == id) {
-				pv = "help me";
-				console.log(dataAnggota[i]);
-			} else {
-				console.log('Data anggota');
+				pv = dataAnggota[i];
+				// console.log(dataAnggota[i]);
 			}
 		} // end for
 		// console.log(dataAnggota.length);

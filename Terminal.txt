@@ -1,0 +1,8 @@
+Token : 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
+
+
+> git init
+> git add .
+> git commit -m "isi komentar"
+> git remote add origin https://github.com/Rahman115/argajaladri.or.id.git
+> git push -f origin master // --force
