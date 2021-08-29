@@ -1,5 +1,6 @@
-//(function () {
-//    "use strict";
+// data controller
+// Create @AbuduChoy
+// 
 var app = angular.module("app.controllers", []);
 
 app.factory('Artikel', ['$http', function ($http) {
@@ -13,15 +14,7 @@ app.factory('Artikel', ['$http', function ($http) {
 
 // Controller Artikel ----
 app.controller('artikelCtrl', ['$scope', '$http', 'Home', function ($scope, $http, Home) {
-    // Info.then(function (params) {
-    //     $scope.berita = {};
-    //     $scope.berita = params;
 
-    //     console.log($scope.berita);
-        
-    // });
-    // }]);
-    
     Home.then(function(res) {
         
         $scope.berita = res;
@@ -29,11 +22,6 @@ app.controller('artikelCtrl', ['$scope', '$http', 'Home', function ($scope, $htt
         $scope.allArtikel = {};
         
         for(i=0; i<res.length; i++){
-
-            // $scope.allArtikel[i] = [
-            //     'j' = res[i].judul
-            // ];
-            
             var doc = "src/artikel/"+res[i].desk;
 
                 $http.get(doc).then(function (txt){
@@ -50,7 +38,6 @@ app.controller('artikelCtrl', ['$scope', '$http', 'Home', function ($scope, $htt
     });
     
     $scope.onLoadDesk = function(myData){
-        
         var doc = "src/artikel/"+myData;
 
                 $http.get(doc).then(function (txt){
@@ -105,35 +92,6 @@ app.controller('anggotaCtrl', ['$scope', 'Angkatan', 'Family', function ($scope,
 				} // end for j
                 
             });
-
-            // Items.then(function (successResponse) {
-            //     var ang = successResponse;
-            //     var id;
-            //     var getId;
-
-            //     var angg = {};
-            //     // console.log(ang.length);
-            //     for (i = 0; i < ang.length; i++) {
-            //         id = successResponse[i].id;
-            //         getId = id.split('.');
-            //         if (getId[1] == y) {
-
-            //             angg[i] = successResponse[i];
-            //             // console.log(angg[i]);
-            //         }
-            //     }
-            //     var obj = Object.keys(angg);
-			// 	$scope.obj = obj;
-			// 	$scope.anggota = [];
-				
-			// 	for(j=0; j<obj.length; j++){
-					
-			// 	$scope.anggota[j] = angg[obj[j]];
-			// 	}
-				
-
-            // });
-			// $scope.x = true;
             return y;
         };
 
@@ -157,39 +115,9 @@ app.controller('appCtrl', ['$scope', '$http', 'Home',  function ($scope, $http, 
         
 		for(i=0; i< response.length; i++) {
             var txt = "src/artikel/" + response[i].desk;
-            
-			// v[i] = $http.get(txt).success(function (r) {
-            //     console.log(r.data);
-			//  return r.data;
-			// });
+
 		}
-		
-		
-			// console.log(v);
-			// console.log(Object.keys(v));
-			// console.log(Object.keys(v[0]));
-			// console.log(Object.keys(v[0].$$state));
-			
-			// https://stackoverflow.com/questions/41973109/http-in-a-service-returns-state-object
-			
 		});
-	
-	// $scope.doc = function	(params) {
-		// var txt = "src/artikel/" + params;
-		
-		// $http.get(txt).then(function (r) {
-			
-		// return r.data;
-		// });
-		
-		// 				
-				// return res.data;
-		// console.log(res.data);
-		// });
-		
-		// return txt;
-		
-	// };
 		
 	$scope.divisi = [
             {'id': 1, 'divisi': 'Divisi Mountenering'},
@@ -234,11 +162,7 @@ app.controller('pengurusCtrl', ["$scope", "$http", "Items", "Family", function (
 		
 		for(i=0; i<sum; i++){
 			// console.log(response.data[i].user[0].id);
-		}
-		
-		// console.log(response.data[1].user[0].id);
-		// console.log(sum);
-		
+		}		
 	});
 	$scope.getIdUser = function(params) {
 			// console.log(params);		
@@ -247,9 +171,7 @@ app.controller('pengurusCtrl', ["$scope", "$http", "Items", "Family", function (
 			
 		});
     };
-    
-    
-	
+
     var url = "src/pengurus.json";
     $http.get(url).then(function (response) {
         $scope.pengurus = response.data;
@@ -272,27 +194,11 @@ app.controller('pengurusCtrl', ["$scope", "$http", "Items", "Family", function (
                 for(j=0; j < response.data[i].user.length; j++){
                     $scope.id = response.data[i].user[j].id;
                     ar = $scope.id;
-                    // if()
-                    
-                    // console.log(ar);
-                    // $scope.metaPengurus = resFamily[ar - 1];
-                    //console.log(resFamily[ar - 1]);
-                    
 
-                    
-                    
-                    
-                    
                 } // end for j
                 
             } // end for i
-            // var noInduk = resFamily[ar].no_induk;
-            //var splitNoInduk = noInduk.split('.');
-            // if(splitNoInduk[2] == response.data[i].user[j].id){
-                //  console.log($scope.pengurus);
-            // }
-            
-                    
+   
         }); // end Family function
     } // end $scope.ar
 
@@ -317,7 +223,6 @@ app.controller('pengurusCtrl', ["$scope", "$http", "Items", "Family", function (
 		}
 	});
 		
-		// console.log($scope.pengurus[0].user[0].id);
     });
 }]);
 
@@ -338,10 +243,6 @@ app.controller('divCtrl', ['$scope', '$routeParams', '$http', function ($scope, 
                 var doc = "src/divisi/" + response.data[id - 1].deskripsi;
                 $http.get(doc).then(function (res) {
                     $scope.desk = res.data;
-
-
-                    // return JSON.parse(angular.toJson(v));
-                    // console.log($scope.desk);
                 });
                 // Docx.then(te);
                 $scope.judul = response.data[id - 1].judul;
@@ -404,16 +305,6 @@ app.controller('artikelDetailCtrl', ['$scope', '$routeParams', '$http', 'Home', 
                     
                     var arr = txt.data;
                     var a = arr.split('\n\r');
-
-                    // for(r=0; r<a.length; r++){
-                    //     if(a[r].length == 1 ){
-                         //   console.log('kosong');
-                    //         a[r] = "<br>";
-                    //     }
-                    // }
-                    
-                   // a.join();
-
                     console.log(a);
                     $scope.desk = a;
                     
@@ -463,13 +354,6 @@ app.controller('anggotaDetailCtrl', ['$scope', '$routeParams', '$http', 'Angkata
             var getId;
             var angg = {};
 
-            // var y = 01;
-            //var x = id.slice(2);
-            
-            // 
-
-            //console.log(dataAnggota);
-            // no_induk
             for(i=0; i < dataAnggota.length; i++){
                 id = dataAnggota[i].no_induk;
                 getId = id.split('.');
