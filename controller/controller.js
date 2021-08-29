@@ -110,6 +110,9 @@ app.controller('detailAnggotaCtrl', ['$scope', '$routeParams', '$http', 'Family'
 			console.log(priv);
 			if(priv == id) {
 				console.log(dataAnggota[i]);
+			} else {
+				console.log(id+'Data anggota tidak ditemukan');
+			
 			}
 		} // end for
 		
