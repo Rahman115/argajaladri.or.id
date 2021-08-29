@@ -17,7 +17,7 @@ app.config(function ($routeProvider) {
                 controller: 'anggotaDetailCtrl'
             })
 	    .when('detail_anggota/:postId', {
-    		templateUrl: 'view/detailAnggota.html',
+    		templateUrl: 'view/detailAnggota.html'
 	    	// controller: 'detailAnggotaCtrl'
     	    })
             .when('/artikel', {
