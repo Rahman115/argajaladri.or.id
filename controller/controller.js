@@ -101,7 +101,7 @@ app.controller('detailAnggotaCtrl', ['$scope', '$routeParams', '$http', 'Family'
 	var id = $routeParams.postId;
     	//var x = id.toString().slice(2);
 	Family.then(function (res) {
-    		//console.log(id);
+    		console.log(id);
 		var dataAnggota = res;
 		var priv;
 		// membaca semua data
