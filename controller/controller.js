@@ -101,13 +101,20 @@ app.controller('detailAnggotaCtrl', ['$scope', '$routeParams', '$http', 'Family'
 	var id = $routeParams.postId;
     	//var x = id.toString().slice(2);
 	Family.then(function (res) {
-    		console.log(res);
+    		// console.log(res);
 		var dataAnggota = res;
+		// membaca semua data
+		for(i=0; i<dataAnggota.length; i++) {
+			var priv = dataAnggota[i].no_induk;
+			if(priv == id) {
+				console.log(dataAnggota[i]);
+			}
+		} // end for
 		
-		console.log(dataAnggota.length);
+		// console.log(dataAnggota.length);
 	});
 
-}]);
+}]); // end app controller
 // Controller Dashboard ------
 app.controller('appCtrl', ['$scope', '$http', 'Home',  function ($scope, $http, Home) {
 	Home.then(function (response) {
