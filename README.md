@@ -24,7 +24,9 @@ Pengededitan bisa menggunakan aplikasi pihak ke tiga `Acode` bisa dicari di play
 - `📁 view` - menampilkan hasil
 ### List Edit/Update Data
 
+- [Sebelum melakukan edit file](https://github.com/Rahman115/argajaladri.or.id/blob/master/README.md#sebelum-melakukan-edit-file)
 - [Menambah atau Merubah Data](https://github.com/Rahman115/argajaladri.or.id/blob/master/README.md#support-or-contact)
+- [Cara ganti token](https://github.com/Rahman115/argajaladri.or.id/blob/master/README.md#cara-ganti-token-di-acode)
 
 
 ### Sebelum melakukan edit file
