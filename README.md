@@ -105,4 +105,4 @@ Having trouble with Pages? Check out our [@abuduchoy](https://t.me/AbuduChoy) or
 3. selanjutnya, pilih menu lagi `|` di pojok kanan atas, pilih `Keluar`
 4. setelah keluar, lakukan hal yang sama seperti cara 2
 5. Masukkan `Token` yang telah di berikan
-6. Selesai
+6. Selesai 
