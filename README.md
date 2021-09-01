@@ -144,14 +144,52 @@ Data anggota akan menampilkan data informasi seluruh data anggota. Berikut step 
     - `"hp": "08***",` diisi nomor handphone yang support WA
     - `"email": "***@gmail.com",` diisi email google, atau yahoo
     - `"photo": "background.png",` diisi photo yang akan di tampilkan default `background.png`, *_belum respond system_
-    - `"lapangan": "-"` diisi nama lapangan ex. 
-6. Setelah diisi bisa di simpan
+    - `"lapangan": "-"` diisi nama lapangan
+    - `}` pastikan setalah nama lapangan ditutup dengan kurung krawal 
+5. Setelah diisi bisa di simpan
 
 #### 3. Menambah Data Agenda
-#### 4. Menambah Data Pengurus
+
+1. buka file `../src/agenda.csv`
+2. Didalam file `agenda.csv` terdapat code
+
+```
+0;0;Pengembaraan Angkatan;Meningkatkan jiwa korsa kepada anggota muda;Desember - Januari
+0;1;Pendidikan dasar;Meningkatkan kemampuan dan keterampilan dalam berorganisasi;Februari (Minggu 1 - 2)
+...
+1;0;Pelatihan;-;-
+...
+2;0;Pembuatan Kalender Argajaladri;-;-
+2;1;Pembuatan PDL dan topi lapangan;-;-
+...
+3;0;Ruang hijau argajaladri;-;-
+3;1;Seminar nasional;-;-
+...
+4;0;Pembuatan buku materi tingkat lanjut;-;-
+4;1;Aplikasi lapangan diving;-;-
+...
+5;0;Inventaris alat;-;-
+5;1;Musyawarah Kerja;-;-
+...
+
+```
+
+3. Penjelasan program
+
+#### 4. Mengubah Data Pengurus
+
+1. Buka file `../src/pengurus.json`
+
 #### 5. Mengubah Data Tentang
+
+`Belum bisa di ubah`
+
 #### 6. Mengubah Data Divisi
 
+1. Buka folder `../src/divisi/`
+2. Didalam Folder `./divisi/` terdapat 5 file `arung.txt`, `gua.txt`, `gunung.txt`, `panjat.txt` dan `renang.txt`
+3. Pilih file yang akan di ubah
+4. dan Simpan
 
 ### Support or Contact
 
