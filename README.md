@@ -22,6 +22,10 @@ Pengededitan bisa menggunakan aplikasi pihak ke tiga `Acode` bisa dicari di play
 - `📁 src` - berisi file - file data
 - `📁 vendor`
 - `📁 view` - menampilkan hasil
+### List Edit/Update Data
+
+- [Menambah atau Merubah Data](#Menambah Data Artikel)
+
 
 ### Sebelum melakukan edit file
 `argajaladri.or.id` merupakan situs web static yang tidak memiliki Control Admin. Jadi jika ingin melakukan perubahan, maka akan dirubah secara manual.
