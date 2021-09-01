@@ -24,8 +24,14 @@ Pengededitan bisa menggunakan aplikasi pihak ke tiga `Acode` bisa dicari di play
 - `📁 view` - menampilkan hasil
 ## B. List Edit/Update Data
 
-- [Sebelum melakukan edit file](https://github.com/Rahman115/argajaladri.or.id/blob/master/README.md#sebelum-melakukan-edit-file)
-- [Menambah atau Merubah Data](https://github.com/Rahman115/argajaladri.or.id/blob/master/README.md#support-or-contact)
+- [Sebelum melakukan edit file](https://github.com/Rahman115/argajaladri.or.id/blob/master/README.md#c-sebelum-melakukan-edit-file)
+- [Menambah atau Merubah Data](https://github.com/Rahman115/argajaladri.or.id/blob/master/README.md#d-menambah-atau-merubah-data)
+- [1. Menambah Data Artikel](https://github.com/Rahman115/argajaladri.or.id/blob/master/README.md#1-menambah-data-artikel)
+- [2. Menambah Data Anggota](https://github.com/Rahman115/argajaladri.or.id/blob/master/README.md#2-menambah-data-anggota)
+- [3. Menambah Data Agenda](https://github.com/Rahman115/argajaladri.or.id/blob/master/README.md#3-menambah-data-agenda)
+- [4. Menambah Data Pengurus](https://github.com/Rahman115/argajaladri.or.id/blob/master/README.md#4-menambah-data-pengurus)
+- [5. Mengubah Data Tentang](https://github.com/Rahman115/argajaladri.or.id/blob/master/README.md#5-mengubah-data-tentang)
+- [6. Mengubah Data Divisi](https://github.com/Rahman115/argajaladri.or.id/blob/master/README.md#4-menambah-data-pengurus)
 - [Cara ganti token](https://github.com/Rahman115/argajaladri.or.id/blob/master/README.md#cara-ganti-token-di-acode)
 
 
@@ -96,6 +102,51 @@ Sebaiknya, lakukan _Copy_ dan _Paste_ data `// Tambah data`, code yang akan di t
 3. Selesai
 
 #### 2. Menambah Data Anggota
+
+Data anggota akan menampilkan data informasi seluruh data anggota. Berikut step menambahkan data anggota
+1. Buka file `../src/anggota.json` 
+2. didalam file `anggota.json` terdapat code yang harus ditambahkan
+
+```
+...
+  {
+    // code lama
+  }, {
+        "id_anggota": "0",
+        "no_induk": "AGJ.00.000.ZZ",
+        "angkatan": "-",
+        "nama": "-",
+        "tgl_lahir": "-",
+        "kelamin": "Laki-laki",
+        "darah": "-",
+        "agama": "Islam",
+        "pekerjaan": "-",
+        "alamat": "-",
+        "hp": "08***",
+        "email": "***@gmail.com",
+        "photo": "background.png",
+        "lapangan": "-"
+    },
+
+```
+4. Penjelasan code :
+    - `}, {` setelah kode lama, ada tanda kurung krawal penutup `}` dan buka `{` pastikan di pisahkan tanda `,`.
+    - `"id_anggota"` diisi nomor urut dari anggota, ex. `AGJ.13.211.GB` maka id anggota di isi `"id_anggota": "211",`
+    - `"no_induk": "AGJ.00.000.ZZ",` diisi nomor Anggota, ex `"no_induk": "AGJ.13.211.GB",`
+    - `"angkatan": "-",` diisi nama angkatan Lihat list angkatan
+    - `"nama": "-",` diisi nama asli anggota
+    - `"tgl_lahir": "-",`
+    - `"kelamin": "Laki-laki",` diisi jenis kelamin `"Laki-laki"` atau `"Perempuan"`
+    - `"darah": "-",` diisi golongan darah
+    - `"agama": "Islam",` data dominan `"Islam"`
+    - `"pekerjaan": "-",` diisi pekerjaan `"Mahasiswa"`, `"Wiraswasta"` atau `"PNS"`
+    - `"alamat": "-",`  diisi alamat
+    - `"hp": "08***",` diisi nomor handphone yang support WA
+    - `"email": "***@gmail.com",` diisi email google, atau yahoo
+    - `"photo": "background.png",` diisi photo yang akan di tampilkan default `background.png`, *_belum respond system_
+    - `"lapangan": "-"` diisi nama lapangan ex. 
+6. Setelah diisi bisa di simpan
+
 #### 3. Menambah Data Agenda
 #### 4. Menambah Data Pengurus
 #### 5. Mengubah Data Tentang
