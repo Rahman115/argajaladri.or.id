@@ -175,6 +175,9 @@ Data anggota akan menampilkan data informasi seluruh data anggota. Berikut step 
 ```
 
 3. Penjelasan program
+    Dalam program terdapat bebrapa code, yang perlu diperhatikan adalah tanda titik koma `;`. Fungsi `;` dimaksudkan untuk memisahkan antar variabel
+    - 
+4. dddd
 
 #### 4. Mengubah Data Pengurus
 
