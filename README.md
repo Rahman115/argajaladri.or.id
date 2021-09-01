@@ -152,7 +152,6 @@ Data anggota akan menampilkan data informasi seluruh data anggota. Berikut step 
 
 1. buka file `../src/agenda.csv`
 2. Didalam file `agenda.csv` terdapat code
-
 ```
 0;0;Pengembaraan Angkatan;Meningkatkan jiwa korsa kepada anggota muda;Desember - Januari
 0;1;Pendidikan dasar;Meningkatkan kemampuan dan keterampilan dalam berorganisasi;Februari (Minggu 1 - 2)
@@ -173,11 +172,8 @@ Data anggota akan menampilkan data informasi seluruh data anggota. Berikut step 
 ...
 
 ```
-
-3. Penjelasan program
-    Dalam program terdapat bebrapa code, yang perlu diperhatikan adalah tanda titik koma `;`. Fungsi `;` dimaksudkan untuk memisahkan antar variabel
-    - 
-4. dddd
+3. Dalam program terdapat bebrapa code, yang perlu diperhatikan adalah tanda titik koma `;`. Fungsi `;` dimaksudkan untuk memisahkan antar variabel
+4. penjelasan variabel pertama 
 
 #### 4. Mengubah Data Pengurus
 
