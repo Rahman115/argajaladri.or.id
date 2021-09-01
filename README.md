@@ -13,7 +13,7 @@ Pengededitan bisa menggunakan aplikasi pihak ke tiga `Acode` bisa dicari di play
 - Setelah masuk di layar `GitHub` silahkan cari `argajaladri.co.id`
 - dan lakukan pengeditan di tahap selanjutnya
 
-### Pengenalan Folder
+## A. Pengenalan Folder
 - `📁 Model` - berisi file model
 - `📁 controller` - berisi function mengeksekusi perintah
 - `📁 dash`
@@ -22,14 +22,14 @@ Pengededitan bisa menggunakan aplikasi pihak ke tiga `Acode` bisa dicari di play
 - `📁 src` - berisi file - file data
 - `📁 vendor`
 - `📁 view` - menampilkan hasil
-### List Edit/Update Data
+## B. List Edit/Update Data
 
 - [Sebelum melakukan edit file](https://github.com/Rahman115/argajaladri.or.id/blob/master/README.md#sebelum-melakukan-edit-file)
 - [Menambah atau Merubah Data](https://github.com/Rahman115/argajaladri.or.id/blob/master/README.md#support-or-contact)
 - [Cara ganti token](https://github.com/Rahman115/argajaladri.or.id/blob/master/README.md#cara-ganti-token-di-acode)
 
 
-### Sebelum melakukan edit file
+## C. Sebelum melakukan edit file
 `argajaladri.or.id` merupakan situs web static yang tidak memiliki Control Admin. Jadi jika ingin melakukan perubahan, maka akan dirubah secara manual.
 
 Dibagian ini ada beberapa hal yang harus diperhatikan sebelum melakukan pengeditan.
@@ -54,8 +54,8 @@ Dibagian ini ada beberapa hal yang harus diperhatikan sebelum melakukan pengedit
 
 Data diatas menunjukan `id` dan `nama` adalah suatu variabel.
 
-### Menambah atau Merubah Data
-#### Menambah Data Artikel
+## D. Menambah atau Merubah Data
+#### 1. Menambah Data Artikel
 
 Artikel di butuhkan untuk menyampaikan pesan informasi atau berita dan lain-lain. Menambah data ada beberapa tahapan yang harus diperhatikan. 
 
@@ -95,11 +95,18 @@ Sebaiknya, lakukan _Copy_ dan _Paste_ data `// Tambah data`, code yang akan di t
 
 3. Selesai
 
+#### 2. Menambah Data Anggota
+#### 3. Menambah Data Agenda
+#### 4. Menambah Data Pengurus
+#### 5. Mengubah Data Tentang
+#### 6. Mengubah Data Divisi
+
+
 ### Support or Contact
 
 Having trouble with Pages? Check out our [@abuduchoy](https://t.me/AbuduChoy) or [WA @budu](https://wa.me/qr/KBJZXBQM6BWHH1) and we’ll help you sort it out.
 
-## Cara ganti Token di ACODE
+### Cara ganti Token di ACODE
 1. Buka aplikasi Acode
 2. pilih menu `|` di pojok kanan atas, pilih `GitHub`
 3. selanjutnya, pilih menu lagi `|` di pojok kanan atas, pilih `Keluar`
