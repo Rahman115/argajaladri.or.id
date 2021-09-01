@@ -68,11 +68,11 @@
         "posisi": "Bidang II",
         "user": [
             {
-                "id": 235,
+                "id": 261,
                 "sebagai": "Ketua Bidang"
                 },
                 {
-                    "id": 273,
+                    "id": 272,
                     "sebagai": "Staf"
                 }
         ]
@@ -81,11 +81,11 @@
         "posisi": "Bidang III - Rumah Tangga",
         "user": [
             {
-                "id": 234,
+                "id": 263,
                 "sebagai": "Ketua Bidang"
                 },
                 {
-                    "id": 243,
+                    "id": 276,
                     "sebagai": "Staf"
                 }
         ]
@@ -94,8 +94,12 @@
         "posisi": "Bursa",
         "user": [
             {
-                "id": 239,
+                "id": 265,
                 "sebagai": "Koordinator"
+                },
+                {
+                    "id": 262,
+                    "sebagai": "Staf"
                 }
         ]
     },
@@ -104,8 +108,12 @@
         "user": [
             
             {
-                "id": 240,
+                "id": 273,
                 "sebagai": "Koordinator"
+                },
+                {
+                    "id": 276,
+                    "sebagai": "Staf"
                 }
         ]
     },
@@ -113,11 +121,11 @@
         "posisi": "Pendidikan dak Kaderisasi",
         "user": [
             {
-                "id": 241,
+                "id": 266,
                 "sebagai": "Koordonator"
             },
             {
-                "id": 242,
+                "id": 274,
                 "sebagai": "Staf"
             }
         ]
