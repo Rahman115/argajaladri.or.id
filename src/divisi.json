@@ -2,31 +2,31 @@
     {
         "id": 1,
         "judul": "Divisi Mountenering",
-        "deskripsi": "divisi mountainerring1.txt",
+        "deskripsi": "divisi mountaineering2.txt",
         "image": "img_divisi.jpg"
     },
     {
         "id": 2,
         "judul": "Divisi Caving",
-        "deskripsi": "divisi caving1.txt",
+        "deskripsi": "divisi caving2.txt",
         "image": "img_divisi.jpg"
     },
     {
         "id": 3,
         "judul": "Divisi Rafting",
-        "deskripsi": "arung.txt",
+        "deskripsi": "divisi rafting.txt",
         "image": "img_divisi.jpg"
     },
     {
         "id": 4,
         "judul": "Divisi Diving",
-        "deskripsi": "renang.txt",
+        "deskripsi": "divisi diving.txt",
         "image": "img_divisi.jpg"
     },
     {
         "id": 5,
         "judul": "Divisi Climbing",
-        "deskripsi": "panjat.txt",
+        "deskripsi": "divisi climbing.txt",
         "image": "img_divisi.jpg"
     }
 ]
