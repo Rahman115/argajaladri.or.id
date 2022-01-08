@@ -6,10 +6,7 @@
 			{
 				"subKegiatan": "Pra Pendidikan dasar",
 				"pelaksanaan": "minggu"
-			},
-			{
-				"subKegiatan": "Peng",
-				"pelaksanaan": "minggu"
+			
 			},
 			{
 				"subKegiatan": "Pendidikan Dasar",
@@ -18,10 +15,7 @@
 			{
 				"subKegiatan": "Pengalaman Lapangan",
 				"pelaksanaan": "minggu"
-			},
-			{
-				"subKegiatan": "Pengabdian Masyarakat",
-				"pelaksanaan": "minggu"
+				
 			},
 			{
 				"subKegiatan": "Pelantikan",
@@ -51,6 +45,11 @@
 				"subKegiatan": "Pembuatan Kartu Tanda Anggota",
 				"pelaksanaan": "minggu"
 			}
+			{
+				"subKegiatan": "pembuatan PDH, PDL, dan topi",
+				"pelaksanaan": "minggu"
+			}
+	
 		]
 	},
 	{
@@ -118,4 +117,5 @@
 			{
 				"subKegiatan": "pengelolaan webside",
 				"pelaksanaan": "-"
-		
+
+
