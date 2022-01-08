@@ -53,10 +53,6 @@
 				"subKegiatan": "Pembuatan Kartu Tanda Anggota",
 				"pelaksanaan": "minggu"
 			}
-			{
-				"subKegiatan": "pembuatan PDH, PDL, dan topi",
-				"pelaksanaan": "minggu"
-			}
 	
 		]
 	},
@@ -119,12 +115,4 @@
 		]
 	},    
 	{
-        	"id":6,
-		"posisi": "Bidang IV (Hubungan Masyarakat)"
-		"kegiatan": [
-			{
-				"subKegiatan": "pengelolaan webside",
-				"pelaksanaan": "-"
-	}
-]
-
+        	
