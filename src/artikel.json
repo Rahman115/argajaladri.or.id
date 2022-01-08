@@ -10,7 +10,7 @@
     },
     {
         "id": 2,
-        "date": "10/01/2018",
+        "date": "10/11/2021",
         "judul": "Latihan Rutin ARGAJALADRI",
         "write": "Admin",
         "Tag": 3,
@@ -19,11 +19,11 @@
     },
     {
         "id": 3,
-        "date": "26/06/2018",
-        "judul": "Diesnatalis ARGAJALADRI 26th",
+        "date": "26/11/2021",
+        "judul": "Tips cara Merawat Tali Carmentel dan Carabiner",
         "write": "Admin",
         "Tag": 3,
-        "desk": "doc3.txt",
+        "desk": "tips.txt",
         "image": "image.jpg"
     },
     {
@@ -37,7 +37,7 @@
     },
     {
         "id": 5,
-        "date": "09/01/2022",
+        "date": "09/12/2021",
         "judul": "Pelaksanaan Pra-Pendidikan Argajaladri 2021",
         "write": "Admin",
         "Tag": 3,
