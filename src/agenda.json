@@ -20,6 +20,14 @@
 			{
 				"subKegiatan": "Pelantikan",
 				"pelaksanaan": "minggu"
+			},
+			{
+				"subKegiatan": "magang",
+				"pelaksanaan": "minggu"
+			},
+			{
+				"subKegiatan": "-",
+				"pelaksanaan": "minggu"
 			}
 		]
 	},
@@ -117,6 +125,6 @@
 			{
 				"subKegiatan": "pengelolaan webside",
 				"pelaksanaan": "-"
-	},
-{
+	}
+]
 
