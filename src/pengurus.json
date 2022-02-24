@@ -4,21 +4,24 @@
         "posisi": "DPO",
         "user": [
             {
-                "id": 227,
+                "id": 211,
                 "sebagai": "Koordinator"
             },
             {
-                "id": 210,
+                "id": 069,
                 "sebagai": "Anggota"
             },
             {
-                "id": 211,
+                "id": 077,
                 "sebagai": "Anggota"
             },
             {
-                "id": 224,
+                "id": 186,
                 "sebagai": "Anggota"
-            }
+            },
+            {
+                "id": 264,
+                "sebagai": "Anggota"
         ]
     },
     {
@@ -26,7 +29,7 @@
         "posisi": "Ketua Umum",
         "user": [
             {
-                "id": 268,
+                "id": 273,
                 "sebagai": "Ketua Umum Argajaladri"
                 }
         ]
@@ -36,7 +39,7 @@
         "posisi": "Sekretaris Umum",
         "user": [
             {
-                "id": 264,
+                "id": 277,
                 "sebagai": "Sekretaris Umum Argajaladri"
                 }
         ]
@@ -46,7 +49,7 @@
         "posisi": "Bendahara Umum",
         "user": [
             {
-                "id": 254,
+                "id": 268,
                 "sebagai": "Bendahara Umum Argajaladri"
                 }
         ]
@@ -55,11 +58,11 @@
         "posisi": "Bidang I",
         "user": [
             {
-                "id": 277,
+                "id": 278,
                 "sebagai": "Ketua Bidang"
                 },
                 {
-                    "id": 271,
+                    "id": 279,
                     "sebagai": "Staf"
                 }
         ]
@@ -68,11 +71,11 @@
         "posisi": "Bidang II",
         "user": [
             {
-                "id": 261,
+                "id": 272,
                 "sebagai": "Ketua Bidang"
                 },
                 {
-                    "id": 272,
+                    "id": 281,
                     "sebagai": "Staf"
                 }
         ]
@@ -81,21 +84,12 @@
         "posisi": "Bidang III - Rumah Tangga",
         "user": [
             {
-                "id": 263,
+                "id": 276,
                 "sebagai": "Ketua Bidang"
                 },
                 {
-                    "id": 276,
+                    "id": 280,
                     "sebagai": "Staf"
-                }
-        ]
-    },
-    {
-        "posisi": "Bidang IV",
-        "user": [
-            {
-                "id": 278,
-                "sebagai": "Ketua Bidang"
             }
             
         ]
@@ -108,10 +102,6 @@
             {
                 "id": 265,
                 "sebagai": "Koordinator"
-                },
-                {
-                    "id": 262,
-                    "sebagai": "Staf"
                 }
         ]
     },
@@ -120,12 +110,8 @@
         "user": [
             
             {
-                "id": 273,
+                "id": 281,
                 "sebagai": "Koordinator"
-                },
-                {
-                    "id": 255,
-                    "sebagai": "Staf"
                 }
         ]
     },
@@ -133,11 +119,11 @@
         "posisi": "Pendidikan dak Kaderisasi",
         "user": [
             {
-                "id": 266,
-                "sebagai": "Koordonator"
+                "id": 274,
+                "sebagai": "Koordinator"
             },
             {
-                "id": 274,
+                "id": 283,
                 "sebagai": "Staf"
             }
         ]
