@@ -208,5 +208,12 @@
         "angkatan": "Abhinaya Amita",
         "arti":"Semangat yang Terbatas",
 		"jumlah":5
+    },
+	{
+        "id":31,
+		"tahun": 2022,
+        "angkatan": "Sandya Parama",
+        "arti":"-",
+		"jumlah":3
     }
 ]
