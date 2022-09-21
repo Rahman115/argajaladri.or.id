@@ -4526,5 +4526,53 @@
         "email": "timmanayla@gmail.com",
         "photo": "-",
         "lapangan": "Timhot"
+    },
+    {
+        "id_anggota": "284",
+        "no_induk": "AGJ. 22.284.SP",
+        "angkatan": "Sandya Parama",
+        "nama": "Elvira Mustika Ningrum",
+        "tgl_lahir": "Blora, 21 Juni 2002",
+        "kelamin": "Perempuan",
+        "darah": "-",
+        "agama": "Islam",
+        "pekerjaan": "Mahasiswi",
+        "alamat": "dk.sadang RT.7/RW.2, DS.bicak, kec.todanan,kab.blora",
+        "hp": "085641225425",
+        "email": "elfiramustika1235@gmail.com",
+        "photo": "-",
+        "lapangan": "Gapit"
+    },
+{
+        "id_anggota": "285",
+        "no_induk": "AGJ. 22.285.SP",
+        "angkatan": "Sandya Parama",
+        "nama": "Fiqhi Fakhrur Reza",
+        "tgl_lahir": "Fogi, 23 April 2002",
+        "kelamin": "laki - laki",
+        "darah": "-",
+        "agama": "Islam",
+        "pekerjaan": "Mahasiswa",
+        "alamat": "Desa Fogi, Kec. Kepala Madan, Kab. Buru Selatan, Prov. Maluku ",
+        "hp": "082259670580",
+        "email": "fiqhyfakhrurreza23@gmail.com",
+        "photo": "-",
+        "lapangan": "Piccolo"
+    },
+{
+        "id_anggota": "286",
+        "no_induk": "AGJ. 22.286.SP",
+        "angkatan": "Sandya Parama",
+        "nama": "Zenith Amigdala",
+        "tgl_lahir": "Semarang, 30 Mei 2003",
+        "kelamin": "Perempuan",
+        "darah": "O",
+        "agama": "Islam",
+        "pekerjaan": "Mahasiswi",
+        "alamat": "Jl. Sendang guwo III No 15 RT 003, RW 010, Semarang.",
+        "hp": "081339865251",
+        "email": "zenithamigdala187@gmail.com",
+        "photo": "-",
+        "lapangan": "Mekar / Kantil"
     }
 ]
