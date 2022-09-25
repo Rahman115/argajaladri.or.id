@@ -1,0 +1,85 @@
+/*
+ * @style for Lembaga Penelitian dan Pengabdian Masyarakat UNILA
+ */
+
+/* Attach fonts */
+@font-face{
+    font-family:"Web-Segoe-UI";
+    src:url('../fonts/SegoeUI/segoeui.eot');
+    src:url('../fonts/SegoeUI/segoeui.eot?#iefix') format("embedded-opentype"),
+    url('../fonts/SegoeUI/segoeui.woff') format("woff"),
+    url('../fonts/SegoeUI/segoeui.ttf') format("truetype"),
+    url('../fonts/SegoeUI/segoeui.svg#web') format("svg");
+    font-style:normal;font-weight:normal;
+}
+@font-face{
+    font-family:"Web-Segoe-UI-Light";
+    src:url('../fonts/SegoeUI/segoeuil.eot');
+    src:url('../fonts/SegoeUI/segoeuil.eot?#iefix') format("embedded-opentype"),
+    url('../fonts/SegoeUI/segoeuil.woff') format("woff"),
+    url('../fonts/SegoeUI/segoeuil.ttf') format("truetype"),
+    url('../fonts/SegoeUI/segoeuil.svg#web') format("svg");
+    font-style:normal;font-weight:normal;
+}
+@font-face{
+    font-family:"Web-Droid-Sans";
+    src:url('../fonts/DroidSans/DroidSans.eot');
+    src:url('../fonts/DroidSans/DroidSans.eot?#iefix') format("embedded-opentype"),
+    url('../fonts/DroidSans/DroidSans.woff') format("woff"),
+    url('../fonts/DroidSans/DroidSans.ttf') format("truetype"),
+    url('../fonts/droidsans.svg#web') format("svg");
+    font-style:normal;font-weight:normal;
+}
+@font-face{
+    font-family:"Web-Droid-Sans-Bold";
+    src:url('../fonts/DroidSans/DroidSans-Bold.eot');
+    src:url('../fonts/DroidSans/DroidSans-Bold.eot?#iefix') format("embedded-opentype"),
+    url('../fonts/DroidSans/DroidSans-Bold.woff') format("woff"),
+    url('../fonts/DroidSans/DroidSans-Bold.ttf') format("truetype"),
+    url('../fonts/DroidSans/DroidSans-Bold.svg#web') format("svg");
+    font-style:normal;font-weight:normal;
+}
+body{
+    background: #4f4f4f;
+}
+.form-signin {
+    max-width: 350px;
+    padding: 15px;
+    margin: 100px auto;
+    background : #FFF;
+
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.form-control{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    outline: none;
+}
+
+.btn-primary{
+    font-family: "Web-Segoe-UI";
+    font-weight: normal;
+    border-radius: 0;
+    background: #1b88c5;
+}
+.text-header h1{
+    font-size: 19px;
+    font-family: "Web-Droid-Sans-Bold";
+    color: #5b5b5b;
+    font-weight: normal;
+    padding-bottom: 5px;
+    padding-top: 11px;
+    margin: 0;
+}
+.text-header h2{
+    font-size: 15px;
+    font-family: "Web-Droid-Sans";
+    color: #5b5b5b;
+    font-weight: normal;
+    margin: 0;
+}
