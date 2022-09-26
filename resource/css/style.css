@@ -4,12 +4,15 @@
 
 /* Attach fonts */
 @font-face{
+    font-family: 'Roboto', sans-serif;
+    /*
     font-family:"Web-Segoe-UI";
     src:url('../fonts/SegoeUI/segoeui.eot');
     src:url('../fonts/SegoeUI/segoeui.eot?#iefix') format("embedded-opentype"),
     url('../fonts/SegoeUI/segoeui.woff') format("woff"),
     url('../fonts/SegoeUI/segoeui.ttf') format("truetype"),
     url('../fonts/SegoeUI/segoeui.svg#web') format("svg");
+    **/
     font-style:normal;font-weight:normal;
 }
 @font-face{
@@ -23,12 +26,15 @@
 }
 @font-face{
     font-family: 'Open Sans', sans-serif;
+    /*
     #font-family:"Web-Droid-Sans";
     #src:url('../fonts/DroidSans/DroidSans.eot');
     #src:url('../fonts/DroidSans/DroidSans.eot?#iefix') format("embedded-opentype"),
     #url('../fonts/DroidSans/DroidSans.woff') format("woff"),
     #url('../fonts/DroidSans/DroidSans.ttf') format("truetype"),
     #url('../fonts/droidsans.svg#web') format("svg");
+    
+    **/
     font-style:normal;font-weight:normal;
 }
 @font-face{
@@ -71,7 +77,7 @@ a{
 }
 body{
     background: url("../images/bg_all.jpg");
-    font-family: "Web-Segoe-UI";
+    font-family: "Roboto";
     margin: 0;
 }
 
@@ -635,7 +641,7 @@ a{
 
 
 .btn-primary{
-    font-family: "Web-Segoe-UI";
+    font-family: "Roboto";
     font-weight: normal;
     border-radius: 0;
     background: #1b88c5;
