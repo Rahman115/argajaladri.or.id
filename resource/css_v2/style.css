@@ -8,6 +8,9 @@
     box-sizing: border-box;
 }
 
+.pages .row {
+margin: 60px 0;
+}
 .row::after {
     content: "";
     clear: both;
