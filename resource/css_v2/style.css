@@ -9,7 +9,7 @@
 }
 
 .pages .row {
-margin: 30px 0;
+margin: 20px 0;
 }
 .row::after {
     content: "";
