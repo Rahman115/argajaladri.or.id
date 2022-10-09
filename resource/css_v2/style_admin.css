@@ -185,6 +185,52 @@ header nav ul li a.active {
     /* padding: 10px; */
 }
 
+/** PAGES NAV & MAIN **/
+
+
+.pages .nav {
+    background-color: rgb(161, 210, 236);
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+}
+
+.pages .nav ul {
+    list-style-type: none;
+}
+
+.pages .nav ul li {
+    border-bottom: 2px solid rgba(157, 100, 231, 0.5);
+}
+
+.pages .nav ul li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pages .nav ul li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.pages .nav ul li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.pages .main {
+    margin-left: 15%;
+    padding: 1px 16px;
+    height: 1000px;
+    /* background-color: #6096fa; */
+}
+
+
 .menu-toggle {
 
     color: #fff;
