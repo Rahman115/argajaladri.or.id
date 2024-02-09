@@ -215,5 +215,12 @@
         "angkatan": "Sandya Parama",
         "arti":"-",
 		"jumlah":3
+    },
+	{
+        "id":32,
+		"tahun": 2023,
+        "angkatan": "nama angkatan",
+        "arti":"-",
+		"jumlah":6
     }
 ]
