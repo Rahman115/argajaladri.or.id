@@ -145,6 +145,15 @@ header .logo {
     float: left;
     font-weight: bold;
 }
+header .logo a{
+    cursor: pointer;
+    color: #fff;
+}
+
+header .logo a:hover{
+    color: #fff;
+}
+
 
 header nav {
     float: right;
