@@ -580,7 +580,7 @@ img {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
 
     .prev,
     .next,
@@ -603,3 +603,5 @@ img {
         border-bottom: 2px solid #eee;
     }
 }
+
+/* end of @media 400px */
