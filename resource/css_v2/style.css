@@ -263,9 +263,9 @@ h2.title-top {
 }
 
 /* ARTIKEL */
-.tag pre{
+.tag span{
     display: inline;
-  font-family: Roboto, sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 .tag a{
