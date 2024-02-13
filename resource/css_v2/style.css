@@ -263,6 +263,9 @@ h2.title-top {
 }
 
 /* ARTIKEL */
+.tag {
+    font-size: 1.2rem;
+}
 .tag span{
     display: inline;
     font-family: Roboto, sans-serif;
@@ -277,7 +280,7 @@ h2.title-top {
 }
 
 .tag .tag_name {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .tag .tag_date {
