@@ -77,6 +77,8 @@ margin: 20px 0;
     [class*="col-"] {
         width: 100%;
     }
+
+
 }
 
 
@@ -288,6 +290,27 @@ h2.title-top {
   color: #ff00ad;
 }
 
+.artikel-img{
+  height: 300px; 
+  width: auto; 
+  background-color: blue;
+  display:flex; position:relative; 
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+  
+  /* border-radius: 20px 20px 20px 20px;
+  border: 3px solid rgba(226, 141, 141, 0.6); */
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.artikel-img img {
+    flex-shrink:0; 
+    width:100%; 
+    min-height:100%
+}
+
 /** RESPONSIVE **/
 
 @media (max-width : 730px) {
@@ -329,7 +352,11 @@ h2.title-top {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 730px) {}
+@media only screen and (max-width: 730px) {
+.artikel-img{
+  height: 200px; 
+  }
+}
 
 
 /* CONTENT WEBSITE BEGIN */
