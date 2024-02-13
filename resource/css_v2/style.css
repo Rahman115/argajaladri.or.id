@@ -364,7 +364,7 @@ h2.title-top {
 .contentaa {
     background-color: rgb(255, 255, 255);
     position: relative;
-    top: -40px;
+/*     top: -40px; */
     max-width: 1000px;
     margin: 0 auto 0 auto;
     padding: 10px;
