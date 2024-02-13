@@ -9,7 +9,7 @@
 }
 
 .pages .row {
-margin: 20px 0;
+/* margin: 20px 0; */
 }
 .row::after {
     content: "";
@@ -192,7 +192,7 @@ header nav ul li a.active {
     position: relative;
     max-width: 1000px;
     margin: 0 auto 0 auto;
-    padding-top:80px;
+    padding-top:100px;
     background-color: rgba(255, 255, 255, 0.5);
     /* display: inline; */
     overflow: hidden;
