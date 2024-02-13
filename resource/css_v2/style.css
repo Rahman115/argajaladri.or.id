@@ -262,6 +262,29 @@ h2.title-top {
     padding-bottom: 20px;
 }
 
+/* ARTIKEL */
+.tag pre{
+    display: inline;
+  font-family: Roboto, sans-serif;
+}
+
+.tag a{
+    color: #000;
+}
+
+.tag a:hover{
+    color: #ff00ad;
+}
+
+.tag .tag_name {
+  font-weight: bold;
+}
+
+.tag .tag_date {
+  /* font-style: italic; */
+  color: #ff00ad;
+}
+
 /** RESPONSIVE **/
 
 @media (max-width : 730px) {
