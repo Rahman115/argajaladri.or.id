@@ -1,6 +1,6 @@
 # Add favico in panel argajaladri
 
-##Installation
+## Installation
 
 First, use the download button to download the files listed below. Place the files in the root directory of your website.
 
